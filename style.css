@@ -46,17 +46,31 @@ hr {
 }
 
 .o-link,
-.o-link:visited {
+.o-link:visited,
+.o-link_with-icon {
   color: var(--color-label);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: var(--text-size-s);
+  cursor: pointer;
   transition: color 300ms ease 0s;
 }
 
-.o-link:hover {
+.o-link:hover,
+.o-link_with-icon:hover {
   text-decoration: underline;
   color: var(--color-accident);
+}
+
+.o-link_with-icon {
+  text-transform: none;
+}
+
+.o-link_with-icon .o-icon {
+  margin: 0 9px;
+}
+
+.section__header .o-link_with-icon {
+  margin-right: 1rem;
 }
 
 body, html {
@@ -147,7 +161,7 @@ body, html {
 }
 
 .section__header {
-  padding: 20px 0;
+  margin: 30px 0;
 }
 
 .o-menu__item {
@@ -186,10 +200,28 @@ body, html {
   transition: fill 300ms ease 0s;
 }
 
+.o-link_with-icon:hover [class*="o-icon"],
 .o-link:hover [class*="o-icon"],
 [class*="o-icon"].o-link:hover {
   fill: var(--color-accident);
   cursor: pointer;
+}
+
+.marked {
+  position: relative;
+  display: inline-block;
+}
+
+.marked::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 1px;
+  background: var(--color-error);
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  box-shadow: 0.5px 0.9px 3px 0 rgba(0, 9, 47, 0.2);
 }
 
   /* LAYOUTS */
@@ -243,6 +275,10 @@ body, html {
   display: none;
 }
 
+.o-text {
+  font-size: var(--text-size-r);
+}
+
 .o-text_small {
   font-size: var(--text-size-s);
 }
@@ -261,6 +297,13 @@ body, html {
   font-size: var(--text-size-l);
   font-weight: 600;
   color: var(--color-accident);
+}
+
+.o-title + .o-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 10px;
+  margin-left: 19px;
 }
 
 [class*="o-button"] {
@@ -308,6 +351,13 @@ body, html {
   padding: 8px 15px;
   font-size: var(--text-size-l);
   color: var(--color-accident);
+}
+
+.section__header .o-select {
+  padding: 0.625rem 1.6875rem 0.625rem 0.8125rem;
+  line-height: 1.2;
+  height: auto;
+  font-size: var(--text-size-r);
 }
 
 .o-switcher {
@@ -393,6 +443,33 @@ body, html {
 
 .o-container__item_opened .o-container__edit {
   display: block;
+}
+
+.o-filter {
+  margin-right: 1.25rem
+}
+
+.o-filter::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.o-filter__item {
+  float: left;
+  padding: 0.625rem 0.875rem;
+  line-height: 1.2;
+  font-size: var(--text-size-r);
+  color: var(--color-label);
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  margin-right: -1px;
+}
+
+.o-filter__item.active {
+  background: #fff;
+  color: var(--color-accident);
+  cursor: default;
 }
 
 
