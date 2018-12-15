@@ -153,6 +153,8 @@ body, html {
 .o-menu__item {
   text-align: center;
   padding: 15px 0;
+  display: block;
+  text-decoration: none;
   color: #555d77;
   fill: #555d77;
   font-size: var(--text-size-s);
