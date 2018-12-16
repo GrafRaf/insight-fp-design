@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Insight - Фонды</title>
+  <title>Insight - Заявки</title>
   <link rel="stylesheet" type="text/css" href="../style.css"/>
   <link rel="import" href="../panel.html" />
   <script type="text/javascript" src="../js/jquery.min.js"></script>
@@ -53,10 +53,605 @@
           <use xlink:href="#o-icon_filter"></use>
         </svg></span>Фильтры
       </span>
-
     </div>
   </div>
   <div class="o-container">
+    <table class="o-table">
+      <thead>
+      <tr>
+        <th class="o-table__th">
+          <div class="o-table__sort o-table__sort_asc">Дата</div>
+        </th>
+        <th class="o-table__th">
+          <div class="o-table__sort o-table__sort_desc">Номер</div>
+        </th>
+        <th class="o-table__th">
+          <div class="o-table__sort">Статус</div>
+        </th>
+        <th class="o-table__th">
+          <div class="o-table__sort">сотрудник</div>
+        </th>
+        <th class="o-table__th">
+          <div class="o-table__sort">Организация</div>
+        </th>
+        <th class="o-table__th">
+          <div class="o-table__sort">Предмет</div>
+        </th>
+        <th class="o-table__th">
+          <div class="o-table__sort">подразделение</div>
+        </th>
+        <th class="o-table__th">
+          <div class="o-table__sort">фонды</div>
+        </th>
+        <th class="o-table__th l-align_right">
+          <div class="o-table__sort">сумма</div>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="status_approved">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Одобрена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_rejected">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Отклонена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_draft">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Черновик
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared selected">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="l-position_relative">
+            <svg class="o-link o-icon_more">
+              <use xlink:href="#o-icon_more"></use>
+            </svg>
+            <div class="o-dropdown-list">
+              <a class="o-dropdown-list__item" href="#">Одобрить</a>
+              <a class="o-dropdown-list__item" href="#">Рассмотреть на ФП</a>
+              <a class="o-dropdown-list__item" href="#">Отклонить</a>
+              <a class="o-dropdown-list__item" href="#">Редактировать</a>
+              <a class="o-dropdown-list__item" href="#">Создать платежный документ</a>
+              <a class="o-dropdown-list__item o-dropdown-list__item_close" href="#">Закрыть</a>
+            </div>
+          </div>
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+      <tr class="status_prepared">
+        <td class="o-table__td">
+          <span class="o-status"></span>
+          09.08.18
+        </td>
+        <td class="o-table__td">
+          45663
+        </td>
+        <td class="o-table__td">
+          Подготовлена
+        </td>
+        <td class="o-table__td">
+          Вернигора
+        </td>
+        <td class="o-table__td">
+          <div>ТД “Гром”</div>
+          <div>Этаж “Молния”</div>
+        </td>
+        <td class="o-table__td">
+          Оргтехника
+        </td>
+        <td class="o-table__td">
+          Подразделение №1
+        </td>
+        <td class="o-table__td">
+          Услуги
+        </td>
+        <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="o-pagination clear">
+    <div class="l-float_left">
+      <div class="o-text_label o-text_small">Записей 1-50 из 3651</div>
+    </div>
+    <div class="l-float_right">
+      <div class="o-select">
+        50
+      </div>
+    </div>
+    <div class="o-pagination__list">
+      <span class="o-pagination__item">1</span>
+      <span class="o-pagination__item">...</span>
+      <span class="o-pagination__item">223</span>
+      <span class="o-pagination__item">224</span>
+      <span class="o-pagination__item">225</span>
+      <span class="o-pagination__item">...</span>
+      <span class="o-pagination__item">1006</span>
+    </div>
   </div>
 </section>
 <div id="system-panel"></div>

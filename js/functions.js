@@ -13,6 +13,15 @@ $(document).ready(function () {
   $('.o-switcher').click(function(){
     $(this).toggleClass('o-switcher_active')
   });
+
+  $('.o-icon_more').click(function(){
+    $(this).next('.o-dropdown-list').slideToggle(300);
+  });
+
+  $('.o-dropdown-list__item_close').click(function(){
+    $(this).parent('.o-dropdown-list').slideUp(300);
+    return false;
+  });
 });
 
 
