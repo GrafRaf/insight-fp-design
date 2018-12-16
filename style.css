@@ -622,10 +622,12 @@ tr.selected .o-table__td {
 .o-pagination .o-select {
   height: 36px;
   font-size: var(--text-size-r);
+  float: right;
 }
 
 .o-pagination__list {
   text-align: center;
+  margin: 0 auto;
 }
 
 .o-pagination__item {
@@ -633,8 +635,22 @@ tr.selected .o-table__td {
   padding: 0 10px;
   height: 36px;
   line-height: 36px;
-
+  min-width: 36px;
+  margin-right: -1px;
+  float: left;
   color: var(--color-label);
   cursor: pointer;
+}
+
+.o-pagination__item.active {
+  color: var(--color-base);
+  background: #fff;
+}
+
+.o-pagination .o-icon {
+  margin: 8px 1rem 0;
+  width: 20px;
+  height: 20px;
+  float: left;
 }
 
