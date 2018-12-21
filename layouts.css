@@ -1,0 +1,49 @@
+  /* LAYOUTS */
+  .l-float_right {
+    float: right;
+  }
+  
+  .l-float_left {
+    float: left;
+  }
+  
+  .l-align_right {
+    text-align: right;
+  }
+  
+  .l-align_center {
+    text-align: center;
+  }
+  
+  .l-position_relative {
+    position: relative;
+  }
+  
+  .l-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.25rem;
+  }
+  
+  .l-grid_row {
+    margin-bottom: 20px;
+    min-height: 10px;
+  }
+  
+  .l-grid__item_1 {grid-column: span 1}
+  .l-grid__item_2 {grid-column: span 2}
+  .l-grid__item_3 {grid-column: span 3}
+  .l-grid__item_4 {grid-column: span 4}
+  .l-grid__item_5 {grid-column: span 5}
+  .l-grid__item_6 {grid-column: span 6}
+  .l-grid__item_7 {grid-column: span 7}
+  .l-grid__item_8 {grid-column: span 8}
+  .l-grid__item_9 {grid-column: span 9}
+  .l-grid__item_10 {grid-column: span 10}
+  .l-grid__item_11 {grid-column: span 11}
+  .l-grid__item_12 {grid-column: span 12}
+  
+  .l-switcher-control {
+    padding: 10px 0;
+  }

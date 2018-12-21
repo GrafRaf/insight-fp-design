@@ -1,54 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=cyrillic');
-
-:root {
-  --color-base: #2d3851;
-  --color-accident: #333d56;
-  --color-success: #4ac350;
-  --color-focus: #1e389c;
-  --color-error: #e24448;
-  --color-label: #989ead;
-  --color-border: #eae9ee;
-  --color-heading: #f3f2f9;
-
-  --text-size-s: 0.625rem;  /* 10px */
-  --text-size-r: 0.75rem;   /* 12px */
-  --text-size-m: 0.8125rem; /* 13px */
-  --text-size-l: 0.875rem; /* 13px */
-  --text-size-x: 1.125rem;  /* 18px */
-  --text-size-xl: 1.5rem;   /* 24px */
-
-}
-
-*,  ::after,  ::before {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus {
-  outline: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  font-size: var(--text-size-r);
-}
-
-hr {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  height: 1px;
-  background: var(--color-border);
-}
-
-.clear::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+@import 'main.css';
+@import 'aside.css';
+@import 'layouts.css';
+@import 'pagination.css';
+@import 'table.css';
 
 .o-link,
 .o-link:visited,
@@ -77,56 +32,6 @@ hr {
 
 .section__header .o-link_with-icon {
   margin-right: 1rem;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.47;
-  font-weight: 400;
-  height: 100%;
-  background: #fafafc;
-  color: var(--color-base);
-}
-
-
-
-::-webkit-scrollbar,
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-track-piece {
-  background: var(--color-border);
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-accident);
-}
-
-.aside {
-  height: 100%;
-  width: 170px;
-  position: fixed;
-  z-index: 38;
-  left: 0;
-  top: 0;
-  padding-top: 110px;
-  padding-bottom: 50px;
-  overflow-y: auto;
-  background: #0b163c;
-  box-shadow: 0 0 20px 0 rgba(0, 35, 173, 0.4);
-}
-
-.aside::-webkit-scrollbar,
-.aside::-webkit-scrollbar-track,
-.aside::-webkit-scrollbar-track-piece {
-  background: #0b1529;
-  width: 4px;
-}
-
-.aside::-webkit-scrollbar-thumb {
-  background: rgba(243,244,245,.8);
 }
 
 .header {
@@ -234,56 +139,6 @@ body, html {
   width: 6px;
   height: 6px;
   box-shadow: 0.5px 0.9px 3px 0 rgba(0, 9, 47, 0.2);
-}
-
-  /* LAYOUTS */
-.l-float_right {
-  float: right;
-}
-
-.l-float_left {
-  float: left;
-}
-
-.l-align_right {
-  text-align: right;
-}
-
-.l-align_center {
-  text-align: center;
-}
-
-.l-position_relative {
-  position: relative;
-}
-
-.l-grid {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 1.25rem;
-}
-
-.l-grid_row {
-  margin-bottom: 20px;
-  min-height: 10px;
-}
-
-.l-grid__item_1 {grid-column: span 1}
-.l-grid__item_2 {grid-column: span 2}
-.l-grid__item_3 {grid-column: span 3}
-.l-grid__item_4 {grid-column: span 4}
-.l-grid__item_5 {grid-column: span 5}
-.l-grid__item_6 {grid-column: span 6}
-.l-grid__item_7 {grid-column: span 7}
-.l-grid__item_8 {grid-column: span 8}
-.l-grid__item_9 {grid-column: span 9}
-.l-grid__item_10 {grid-column: span 10}
-.l-grid__item_11 {grid-column: span 11}
-.l-grid__item_12 {grid-column: span 12}
-
-.l-switcher-control {
-  padding: 10px 0;
 }
 
 /* OBJECTS */
@@ -557,58 +412,6 @@ body, html {
   cursor: default;
 }
 
-.o-table {
-  width: 100%;
-  border-collapse: collapse;
-  padding: 0;
-  margin: 0;
-}
-
-.o-table__th {
-  background: var(--color-heading);
-  font-size: var(--text-size-s);
-  text-transform: uppercase;
-  font-weight: 400;
-  padding: 1.25rem 0 1.25rem 1.875rem;
-  border-bottom: 1px solid var(--color-border);
-  text-align: left;
-}
-
-.o-table__sort {
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-}
-
-[class*="o-table__sort_"]::after {
-  content: "▼";
-  color: var(--color-label);
-  font-size: 6px;
-  position: absolute;
-  right: -11px;
-  top: 2px;
-  transform: scaleX(1.5);
-}
-
-.o-table__sort_asc::after {
-  transform: scaleX(1.5) rotate(180deg);
-}
-
-.o-table__td {
-  background: #fff;
-  padding: 0.75rem 0 0.75rem 1.875rem;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.o-table__th:last-child,
-.o-table__td:last-child {
-  padding-right: 2.5rem;
-}
-
-.o-table .l-align_right {
-  text-align: right;
-}
-
 .o-status {
   display: inline-block;
   width: 8px;
@@ -673,45 +476,6 @@ tr.selected .o-table__td {
 .o-dropdown-list__item_close {
   color: var(--color-error);
   margin-top: 1rem;
-}
-
-.o-pagination {
-  padding-top: 1.875rem;
-}
-
-.o-pagination .o-select {
-  height: 36px;
-  font-size: var(--text-size-r);
-  float: right;
-}
-
-.o-pagination__list {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.o-pagination__item {
-  border: 1px solid var(--color-border);
-  padding: 0 10px;
-  height: 36px;
-  line-height: 36px;
-  min-width: 36px;
-  margin-right: -1px;
-  float: left;
-  color: var(--color-label);
-  cursor: pointer;
-}
-
-.o-pagination__item.active {
-  color: var(--color-base);
-  background: #fff;
-}
-
-.o-pagination .o-icon {
-  margin: 8px 1rem 0;
-  width: 20px;
-  height: 20px;
-  float: left;
 }
 
 .o-file {

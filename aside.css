@@ -1,0 +1,24 @@
+.aside {
+    height: 100%;
+    width: 170px;
+    position: fixed;
+    z-index: 38;
+    left: 0;
+    top: 0;
+    padding-top: 110px;
+    padding-bottom: 50px;
+    overflow-y: auto;
+    background: #0b163c;
+    box-shadow: 0 0 20px 0 rgba(0, 35, 173, 0.4);
+  }
+  
+  .aside::-webkit-scrollbar,
+  .aside::-webkit-scrollbar-track,
+  .aside::-webkit-scrollbar-track-piece {
+    background: #0b1529;
+    width: 4px;
+  }
+  
+  .aside::-webkit-scrollbar-thumb {
+    background: rgba(243,244,245,.8);
+  }
