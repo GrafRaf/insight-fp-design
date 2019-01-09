@@ -264,6 +264,10 @@ body, html {
   grid-column-gap: 1.25rem;
 }
 
+.section__form .l-grid {
+  grid-column-gap: 0.625rem;
+}
+
 .l-grid_row {
   margin-bottom: 20px;
   min-height: 10px;
