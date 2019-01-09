@@ -396,6 +396,10 @@ body, html {
   border-color: var(--color-focus);
 }
 
+.o-select_opened {
+  border-color: var(--color-focus)
+}
+
 .o-textarea {
   padding: 24px 20px 24px 15px;
 }
@@ -468,11 +472,13 @@ body, html {
   background: #fafafc;
   z-index: 9;
   width: calc(100% + 2px);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-focus);
+  border-top-color: #fafafc;
 }
 
 .o-select_choice .o-select__list {
   top: -1px;
+  border-color: var(--color-border);
 }
 
 .o-select_opened .o-select__list {
@@ -480,15 +486,63 @@ body, html {
 }
 
 .o-select__item {
-  padding: 12px 20px;
+  padding: 8px 20px;
   cursor: pointer;
   position: relative;
-  border-bottom: 1px solid var(--color-border);
 }
 
 .o-select__item:hover,
-.o-select__item_back {
+.o-select__item_back,
+.o-select_choice .o-select__item_selected:hover {
   background: var(--color-heading);
+}
+
+.o-select_choice .o-select__item {
+  border-bottom: 1px solid var(--color-border);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.o-select__item_selected,
+.o-select__item_selected:hover {
+  color: #fff;
+  background: var(--color-focus);
+}
+
+.o-select_choice .o-select__item_selected {
+  color: var(--color-base);
+  background-color: transparent;
+}
+
+.o-select_multichoice .o-select__item {
+  padding-left: 40px;
+}
+
+.o-select_multichoice .o-select__item::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: solid 1px var(--color-border);
+}
+
+.o-select_multichoice .o-icon {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  margin-top: -6px;
+  fill: #fff;
+  display: none;
+  width: 12px;
+  height: 12px;
+}
+
+.o-select_multichoice .o-select__item_selected .o-icon {
+  display: block;
 }
 
 .o-select__item_back svg {
@@ -505,7 +559,7 @@ body, html {
   font-size: 8px;
 }
 
-.o-select__item_selected::after {
+.o-select_choice .o-select__item_selected::after {
   content: "▼";
   color: var(--color-base);
   font-size: 4px;
@@ -517,6 +571,9 @@ body, html {
 
 .o-select__item_back::before {
   display: none;
+}
+
+.o-select_multichoice .o-select__item {
 }
 
 .o-switcher {
