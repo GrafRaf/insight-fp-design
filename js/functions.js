@@ -23,6 +23,10 @@ $(document).ready(function () {
     return false;
   });
 
+  $('.o-dialog__close .o-icon_close').click(function(){
+    $(this).parents('.o-dialog-wrapper').removeClass('o-dialog-wrapper_visible')
+  })
+
   initSelect();
 });
 
@@ -38,6 +42,10 @@ function initSelect() {
     select.removeClass('o-select_opened');
     return false;
   })
+}
+
+function showDialog(el) {
+  $('#' + el).addClass('o-dialog-wrapper_visible');
 }
 
 

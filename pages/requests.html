@@ -39,7 +39,7 @@
       <a class="o-button" href="requests_create_new.html">Создать</a>
     </div>
   </div>
-  <div class="section__header clear">
+  <div class="section__header clear l-position_relative">
     <h1 class="o-title l-float_left">
       80 заявок
     </h1>
@@ -47,7 +47,7 @@
       <use xlink:href="#o-icon_search"></use>
     </svg>
     <div class="l-float_right o-text">
-      <span class="o-link_with-icon">
+      <span class="o-link_with-icon" onclick="showDialog('filter-dialog')">
         <span class="marked">
         <svg class="o-icon marked">
           <use xlink:href="#o-icon_filter"></use>
@@ -660,6 +660,80 @@
     </div>
   </div>
 </section>
+<div class="o-dialog-wrapper" id="filter-dialog">
+  <div class="o-dialog">
+    <span class="o-dialog__close o-link">
+      <svg class="o-icon_close"><use xlink:href="#o-icon_close"></use></svg>
+    </span>
+    <div class="o-title">
+      Фильтры
+    </div>
+    <div class="l-grid l-grid_row">
+      <div class="l-grid__item_4">
+        <div class="o-select">
+          <div class="o-text_small o-text_label">
+            Сотрудник
+          </div>
+          Холод С.
+        </div>
+      </div>
+      <div class="l-grid__item_4">
+        <div class="o-select">
+          <div class="o-text_small o-text_label">
+            Организация
+          </div>
+          Торговый дом
+        </div>
+      </div>
+      <div class="l-grid__item_4">
+        <div class="o-select">
+          <div class="o-text_small o-text_label">
+            Подразделение
+          </div>
+          Подразделение 7
+        </div>
+      </div>
+    </div>
+
+    <div class="l-grid l-grid_row">
+      <div class="l-grid__item_4">
+        <div class="o-select">
+          <div class="o-text_small o-text_label">
+            Фонд
+          </div>
+          Налоги
+        </div>
+      </div>
+      <div class="l-grid__item_4">
+        <div class="o-select">
+          <div class="o-text_small o-text_label">
+            Статья
+          </div>
+          Номер 3
+        </div>
+      </div>
+      <div class="l-grid__item_2">
+        <div class="o-select">
+          <div class="o-text_small o-text_label">
+            Сумма от
+          </div>
+          400 000 000
+        </div>
+      </div>
+      <div class="l-grid__item_2">
+        <div class="o-select">
+          <div class="o-text_small o-text_label">
+            Сумма до
+          </div>
+          800 000 000
+        </div>
+      </div>
+    </div>
+    <div class="l-grid_row"></div>
+    <span class="o-button_primary">Применить</span>
+    <span class="o-button_secondary">сбросить</span>
+  </div>
+</div>
 <div id="system-panel"></div>
 </body>
 </html>
