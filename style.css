@@ -623,6 +623,11 @@ body, html {
   border-color: var(--color-success);
 }
 
+.status_preapproved .o-status {
+  border-color: var(--color-success);
+  background: var(--color-success);
+}
+
 .status_rejected .o-status {
   border-color: var(--color-error);
 }
