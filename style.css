@@ -818,6 +818,11 @@ tr.selected .o-table__td {
   top: 1.25rem;
   background: #fff;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.o-dropdown-list_requests {
+  width: 23rem;
 }
 
 .o-dropdown-list__item {
@@ -828,7 +833,6 @@ tr.selected .o-table__td {
   color: var(--color-base);
   white-space: nowrap;
   text-align: left;
-  cursor: pointer;
 }
 
 .o-dropdown-list__item:hover {
