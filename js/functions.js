@@ -35,7 +35,7 @@ function initSelect() {
   select.each(function () {
     $(this).on("click", function() {
       select.not(this).removeClass('o-select_opened');
-      $(this).addClass('o-select_opened');
+      $(this).toggleClass('o-select_opened');
     });
   });
   $('.o-select__item_back').click(function() {
