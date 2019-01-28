@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insight - Заявки</title>
+  <link rel="stylesheet" type="text/css" href="../style.css"/>
+  <link rel="import" href="../panel.html"/>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/functions.js"></script>
+</head>
+<body>
+<header class="header clear">
+  <div class="header__breadcrumbs l-float_left">
+    <span class="o-link" onclick="history.back(-1)"><svg class="o-icon_history-back"><use
+        xlink:href="#o-icon_arrow-left"></use></svg></span>
+    <span class="l-align_middle">Финансовое планирование №365</span>
+    <span class="o-link l-align_middle"><svg class="o-icon"><use xlink:href="#o-icon_help"></use></svg></span>
+  </div>
+  <div class="l-float_right header__user">
+    <img src="../demo/ava.png"/>
+    <div class="l-float_right">
+      <div>Абдулов Юрий</div>
+      <div class="o-text_small o-text_label">Учредитель</div>
+    </div>
+  </div>
+</header>
+<section class="section">
+  <div class="section__doc">
+    <div class="request-header">
+      <div class="l-grid">
+        <div class="l-grid__item_3">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              Организация
+            </div>
+            ТЦ Авангард
+          </div>
+        </div>
+        <div class="l-grid__item_2">
+          <div class="o-select o-text_ellipsis">
+            <div class="o-text_small o-text_label">
+              Дата
+            </div>
+            03.09.18 12:00
+          </div>
+        </div>
+        <div class="l-grid__item_7">
+          <div class="l-float_right">
+            <span class="o-switcher o-switcher_active">
+              ФП утверждено
+            </span>
+            <span class="o-switcher o-switcher_active">
+              Валовая прибыль утверждена
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="request-header__tabs">
+        <a class="request-header__tab-item request-header__tab-item_current" href="plans_item.html">Распределение дохода</a>
+        <a class="request-header__tab-item" href="#">Заявки</a>
+        <a class="request-header__tab-item" href="#">Перемещение, займы</a>
+        <a class="request-header__tab-item" href="#">Фин. показатели</a>
+      </div>
+    </div>
+
+    <div class="request-sum">
+      <div class="l-grid l-grid_row">
+        <div class="l-grid__item_5">
+          <div class="request-sum__label">Доход</div>
+          15 437 977 <sup>₽</sup>
+        </div>
+        <div class="l-grid__item_5">
+          <div class="request-sum__label">Валовая прибыль</div>
+          7 041 000 <sup>₽</sup>
+        </div>
+      </div>
+      <div class="o-text">
+        спецдоход 56 945.43₽
+      </div>
+    </div>
+
+    <div class="l-position_relative">
+      <div class="o-title">
+        Доход
+      </div>
+      <div class="o-gradient-mask o-table_static">
+        <div class="l-overflow_x">
+          <table class="o-table">
+            <thead>
+            <tr>
+              <th class="o-table__th empty-cell"></th>
+              <th class="o-table__th" rowspan="2">
+                <div style="width:150px;">Фонд</div>
+              </th>
+              <th class="o-table__th l-align_right" rowspan="2">
+                Сумма
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">
+                1-7 января
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">
+                8-14 января
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">
+                15-21 января
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">
+                1-7 января
+              </th>
+            </tr>
+            <tr>
+              <th class="o-table__th empty-cell"></th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                План
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Результат
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                План
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Результат
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                План
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Результат
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                План
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Результат
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Товар 1
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_strong o-text_nowrap">800 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Товар 1
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_strong o-text_nowrap">800 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Товар 1
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_strong o-text_nowrap">800 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Товар 1
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_strong o-text_nowrap">800 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap">180 000</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                <span class="o-text_label o-link o-text_small">+ ДОБАВИТЬ</span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap o-text_label">800 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap o-text_label">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap o-text_label">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap o-text_label">180 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_nowrap o-text_label">180 000</div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-position_relative">
+      <div class="o-title">
+        Спецдоход
+      </div>
+      <table class="o-table o-table_static">
+        <thead>
+        <tr>
+          <th class="o-table__th empty-cell"></th>
+          <th class="o-table__th">
+            Вид
+          </th>
+          <th class="o-table__th l-align_right">
+            Сумма
+          </th>
+          <th class="o-table__th">
+            Источник
+          </th>
+          <th class="o-table__th">
+            Период
+          </th>
+          <th class="o-table__th empty-cell"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Обновление
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">+7 000</div>
+          </td>
+          <td class="o-table__td">
+            Отдел №1
+          </td>
+          <td class="o-table__td">
+            12.04.19
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Обновление
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">+7 000</div>
+          </td>
+          <td class="o-table__td">
+            Отдел №1
+          </td>
+          <td class="o-table__td">
+            12.04.19
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Обновление
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">+7 000</div>
+          </td>
+          <td class="o-table__td">
+            Отдел №1
+          </td>
+          <td class="o-table__td">
+            12.04.19
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <span class="o-text_label o-link o-text_small">+ ДОБАВИТЬ</span>
+          </td>
+          <td class="o-table__td l-align_right o-text_label">
+            200 000
+          </td>
+          <td class="o-table__td">
+          </td>
+          <td class="o-table__td">
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="l-position_relative">
+      <span class="o-title">
+        Заливка в фонды
+      </span>
+      &#160;&#160;
+      <span class="o-text">
+        Точка безубыточности на месяц <span class="o-text_strong">732 400₽</span>
+      </span>
+      <div class="o-gradient-mask o-table_static">
+        <div class="l-overflow_x">
+          <table class="o-table">
+            <thead>
+            <tr>
+              <th class="o-table__th empty-cell"></th>
+              <th class="o-table__th" rowspan="2">
+                <div style="width:150px;">Фонд</div>
+              </th>
+              <th class="o-table__th l-align_center" rowspan="2">
+                <div class="o-text_nowrap">% Выполнения</div>
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">
+                1-7 января
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">
+                8-14 января
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">
+                15-21 января
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">
+                22-28 января
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">
+                1-7 февраля
+              </th>
+            </tr>
+            <tr>
+              <th class="o-table__th empty-cell"></th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                План
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                Заливка
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                План
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                Заливка
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                План
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                Заливка
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                План
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                Заливка
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                План
+              </th>
+              <th class="o-table__th o-table__th_rowspan l-align_right">
+                Заливка
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                <div class="o-text_strong">Политика 1</div>
+              </td>
+              <td class="o-table__td">
+              </td>
+              <td class="o-table__td l-align_right">
+              </td>
+              <td class="o-table__td">
+              </td>
+              <td class="o-table__td l-align_right">
+              </td>
+              <td class="o-table__td">
+              </td>
+              <td class="o-table__td l-align_right">
+              </td>
+              <td class="o-table__td">
+              </td>
+              <td class="o-table__td l-align_right">
+              </td>
+              <td class="o-table__td">
+              </td>
+              <td class="o-table__td l-align_right">
+              </td>
+              <td class="o-table__td">
+              </td>
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Фонд
+              </td>
+              <td class="o-table__td l-align_center">
+                <div class="o-text_strong">8%</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Фонд
+              </td>
+              <td class="o-table__td l-align_center">
+                <div class="o-text_strong">8%</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="o-table__td"></td>
+              <td class="o-table__td">
+                <span class="o-text_label o-text_small o-link">+ ДОБАВИТЬ</span>
+              </td>
+              <td class="o-table__td l-align_center">
+                <div class="o-text_label">45%</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                <div class="o-text_strong">Заливка</div>
+              </td>
+              <td class="o-table__td">
+              </td>
+              <td class="o-table__td l-align_right">
+              </td>
+              <td class="o-table__td">
+              </td>
+              <td class="o-table__td l-align_right">
+              </td>
+              <td class="o-table__td">
+              </td>
+              <td class="o-table__td l-align_right">
+              </td>
+              <td class="o-table__td">
+              </td>
+              <td class="o-table__td l-align_right">
+              </td>
+              <td class="o-table__td">
+              </td>
+              <td class="o-table__td l-align_right">
+              </td>
+              <td class="o-table__td">
+              </td>
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Фонд
+              </td>
+              <td class="o-table__td l-align_center">
+                <div class="o-text_strong">8%</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Фонд
+              </td>
+              <td class="o-table__td l-align_center">
+                <div class="o-text_strong">8%</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="o-table__td"></td>
+              <td class="o-table__td">
+                <span class="o-text_label o-text_small o-link">+ ДОБАВИТЬ</span>
+              </td>
+              <td class="o-table__td l-align_center">
+                <div class="o-text_label">45%</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">200 000</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+              <td class="o-table__td l-align_right">
+                <div class="o-text_nowrap o-text_label">0</div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="o-popup-status">
+      В план внесены изменения
+      <span class="o-button_primary">Сохранить</span>
+      <span class="o-link">
+          <svg class="o-icon"><use xlink:href="#o-icon_close"></use></svg>
+        </span>
+    </div>
+  </div>
+</section>
+<div id="system-panel"></div>
+</body>
+</html>
