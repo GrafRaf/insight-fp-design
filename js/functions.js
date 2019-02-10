@@ -25,7 +25,12 @@ $(document).ready(function () {
 
   $('.o-dialog__close .o-icon_close').click(function(){
     $(this).parents('.o-dialog-wrapper').removeClass('o-dialog-wrapper_visible')
-  })
+  });
+
+  $(".o-icon_toggle").click(function(){
+    $('.o-popup-reports__body').slideToggle()
+    $(this).toggleClass('is-rotated');
+  });
 
   initSelect();
 });

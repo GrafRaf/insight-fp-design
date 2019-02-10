@@ -382,6 +382,11 @@ body, html {
   font-weight: 600;
 }
 
+
+.o-text_error {
+  color: var(--color-error);
+}
+
 .o-title {
   font-size: var(--text-size-x);
   padding-top: 5px;
@@ -576,13 +581,34 @@ body, html {
   display: block;
 }
 
-.o-text_drop::after {
+.o-text_dashed {
+  border-bottom: 1px dashed var(--color-base);
+  color: var(--color-base);
+}
+
+.o-text_dashed:hover {
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+.o-text_drop {
+  white-space: nowrap;
   position: relative;
+  margin-right: 20px;
+}
+
+.o-text_drop::after {
+  position: absolute;
   display: inline-block;
-  right: 0;
-  top: 0;
-  margin: 0 0 0 5px;
+  top: 50%;
+  margin: 0;
   vertical-align: middle;
+  transform: scale(1, 0.7) translateY(-50%);
+  right: -10px;
+}
+
+.o-text_drop.collapsed::after {
+  transform: scale(0.7, 1) translateY(-50%) rotate(270deg);
 }
 
 .section__header .o-select {
@@ -865,6 +891,10 @@ body, html {
   margin: 30px 0;
 }
 
+.o-table_fixed {
+  table-layout: fixed;
+}
+
 .o-table__th {
   background: var(--color-heading);
   font-size: var(--text-size-s);
@@ -903,6 +933,11 @@ body, html {
   background: #fff;
   padding: 0.75rem 0 0.75rem 1.875rem;
   border-bottom: 1px solid var(--color-border);
+}
+
+.o-table_static .o-table__td,
+.o-table_static .o-table__th {
+  padding-left: 1rem;
 }
 
 .o-table__td_hr {
@@ -1008,6 +1043,10 @@ tr.selected .o-table__td {
 
 .o-table_static tr:hover .o-table__td {
   background: #fff;
+}
+
+.is-rotated {
+  transform: rotate(180deg);
 }
 
 .o-icon_more {
@@ -1368,6 +1407,43 @@ tr.selected .o-table__td {
   text-align: center;
   height: 50px;
   padding-top: 18px;
+}
+
+/* REPORTS POPUP */
+.o-popup-reports {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 0 20px 0 rgba(0, 35, 173, 0.15);
+  background-color: #ffffff;
+  z-index: 39;
+}
+
+.o-popup-reports__header {
+  padding: 1.875rem 3.125rem;
+  position: relative;
+}
+
+.o-icon_toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 3.125rem;
+  top: 2.6875rem;
+}
+
+.o-popup-reports__header .header__breadcrumbs {
+  margin-right: 3rem;
+}
+
+.o-popup-reports__header .request-sum {
+  margin: 0;
+}
+
+.o-popup-reports__footer {
+  padding: 2.5rem 3.125rem;
+  line-height: 1.75;
 }
 
 .request-loader {
