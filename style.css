@@ -608,6 +608,26 @@ body, html {
   border-top-color: #fafafc;
 }
 
+.o-select__list-fix {
+  position: absolute;
+  right: 6px;
+  top: 0;
+  width: calc(50% - 3px);
+  border-left: 1px solid var(--color-border);
+}
+
+.o-select__list-part {
+  width: 100%;
+  padding-right: calc(50% - 3px);
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.o-select__list_fixed .o-select__item {
+  padding: 8px 0;
+  text-align: center;
+}
+
 .o-select_choice .o-select__list {
   top: -1px;
   border-color: var(--color-border);
