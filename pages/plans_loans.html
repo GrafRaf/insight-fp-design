@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insight - Заявки</title>
+  <link rel="stylesheet" type="text/css" href="../style.css"/>
+  <link rel="import" href="../panel.html"/>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/functions.js"></script>
+</head>
+<body>
+<header class="header clear">
+  <div class="header__breadcrumbs l-float_left">
+    <span class="o-link" onclick="history.back(-1)"><svg class="o-icon_history-back"><use
+        xlink:href="#o-icon_arrow-left"></use></svg></span>
+    <span class="l-align_middle">Финансовое планирование №365</span>
+    <span class="o-link l-align_middle"><svg class="o-icon"><use xlink:href="#o-icon_help"></use></svg></span>
+  </div>
+  <div class="l-float_right header__user">
+    <img src="../demo/ava.png"/>
+    <div class="l-float_right">
+      <div>Абдулов Юрий</div>
+      <div class="o-text_small o-text_label">Учредитель</div>
+    </div>
+  </div>
+</header>
+<section class="section">
+  <div class="section__doc">
+    <div class="request-header">
+      <div class="l-grid">
+        <div class="l-grid__item_3">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              Организация
+            </div>
+            ТЦ Авангард
+          </div>
+        </div>
+        <div class="l-grid__item_1">
+          <div class="o-select o-text_ellipsis">
+            <div class="o-text_small o-text_label">
+              Дата
+            </div>
+            03.09.18
+          </div>
+        </div>
+        <div class="l-grid__item_1">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              Время
+            </div>
+            12:00
+            <div class="o-select__list o-select__list_fixed">
+              <div class="o-select__list-part">
+                <div class="o-select__item">1</div>
+                <div class="o-select__item">2</div>
+                <div class="o-select__item">3</div>
+                <div class="o-select__item">4</div>
+                <div class="o-select__item">6</div>
+                <div class="o-select__item">7</div>
+                <div class="o-select__item">8</div>
+                <div class="o-select__item">9</div>
+                <div class="o-select__item">10</div>
+                <div class="o-select__item">11</div>
+                <div class="o-select__item o-select__item_selected">12</div>
+                <div class="o-select__item">13</div>
+                <div class="o-select__item">14</div>
+                <div class="o-select__item">15</div>
+                <div class="o-select__item">16</div>
+                <div class="o-select__item">17</div>
+                <div class="o-select__item">18</div>
+              </div>
+              <div class="o-select__list-fix">
+                <div class="o-select__item o-select__item_selected">00</div>
+                <div class="o-select__item">10</div>
+                <div class="o-select__item">20</div>
+                <div class="o-select__item">30</div>
+                <div class="o-select__item">40</div>
+                <div class="o-select__item">50</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="l-grid__item_7">
+          <div class="l-float_right">
+            <span class="o-switcher o-switcher_active">
+              ФП утверждено
+            </span>
+            <span class="o-switcher o-switcher_active">
+              Валовая прибыль утверждена
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="request-header__tabs">
+        <a class="request-header__tab-item" href="plans_item.html">Распределение дохода</a>
+        <a class="request-header__tab-item" href="#">Заявки</a>
+        <a class="request-header__tab-item request-header__tab-item_current" href="plans_loans.html">Перемещение, займы</a>
+        <a class="request-header__tab-item" href="#">Фин. показатели</a>
+      </div>
+    </div>
+
+
+    <div class="l-position_relative">
+      <div class="o-title">
+        Перемещение и займы
+      </div>
+      <table class="o-table o-table_static">
+        <colgroup>
+          <col width="20px" />
+          <col width="15%" />
+          <col width="15%" />
+          <col width="10%" />
+          <col width="15%" />
+          <col />
+          <col width="15%" />
+          <col width="20px" />
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="o-table__th empty-cell"></th>
+          <th class="o-table__th">
+            На фонд
+          </th>
+          <th class="o-table__th">
+            С фонда
+          </th>
+          <th class="o-table__th l-align_right">
+            Сумма
+          </th>
+          <th class="o-table__th">
+            Займ/Возврат
+          </th>
+          <th class="o-table__th">
+            Причина
+          </th>
+          <th class="o-table__th l-align_center">
+            Срок возврата
+          </th>
+          <th class="o-table__th empty-cell"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Налоги
+          </td>
+          <td class="o-table__td">
+            Строительный
+          </td>
+          <td class="o-table__td l-align_right">
+            18 900
+          </td>
+          <td class="o-table__td">
+            Займ
+          </td>
+          <td class="o-table__td">
+            Давай потом
+          </td>
+          <td class="o-table__td l-align_center">
+            18.03.19
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Налоги
+          </td>
+          <td class="o-table__td">
+            Строительный
+          </td>
+          <td class="o-table__td l-align_right">
+            18 900
+          </td>
+          <td class="o-table__td">
+            Займ
+          </td>
+          <td class="o-table__td">
+            Давай потом
+          </td>
+          <td class="o-table__td l-align_center">
+            18.03.19
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Налоги
+          </td>
+          <td class="o-table__td">
+            Строительный
+          </td>
+          <td class="o-table__td l-align_right">
+            18 900
+          </td>
+          <td class="o-table__td">
+            Займ
+          </td>
+          <td class="o-table__td">
+            Давай потом
+          </td>
+          <td class="o-table__td l-align_center">
+            18.03.19
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Налоги
+          </td>
+          <td class="o-table__td">
+            Строительный
+          </td>
+          <td class="o-table__td l-align_right">
+            18 900
+          </td>
+          <td class="o-table__td">
+            Займ
+          </td>
+          <td class="o-table__td">
+            Давай потом
+          </td>
+          <td class="o-table__td l-align_center">
+            18.03.19
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <span class="o-text_label o-link o-text_small">+ ДОБАВИТЬ</span>
+          </td>
+          <td class="o-table__td l-align_right o-text_label">
+            200 000
+          </td>
+          <td class="o-table__td">
+          </td>
+          <td class="o-table__td">
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="o-popup-status">
+      В план внесены изменения
+      <span class="o-button_primary">Сохранить</span>
+      <span class="o-link">
+          <svg class="o-icon"><use xlink:href="#o-icon_close"></use></svg>
+        </span>
+    </div>
+  </div>
+</section>
+<div id="system-panel"></div>
+</body>
+</html>

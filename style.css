@@ -875,6 +875,10 @@ body, html {
   text-align: left;
 }
 
+.o-table__th.l-align_center{
+  text-align: center;
+}
+
 .o-table__sort {
   cursor: pointer;
   position: relative;
