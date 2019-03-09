@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insight - Заявки</title>
+  <link rel="stylesheet" type="text/css" href="../style.css"/>
+  <link rel="import" href="../panel.html"/>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/functions.js"></script>
+</head>
+<body>
+<header class="header clear">
+  <div class="header__breadcrumbs l-float_left">
+    <span class="l-align_middle">Настройка ФП от 12.03.19</span>
+    <span class="o-link l-align_middle"><svg class="o-icon"><use xlink:href="#o-icon_help"></use></svg></span>
+  </div>
+  <div class="l-float_right header__user">
+    <img src="../demo/ava.png"/>
+    <div class="l-float_right">
+      <div>Абдулов Юрий</div>
+      <div class="o-text_small o-text_label">Учредитель</div>
+    </div>
+  </div>
+</header>
+<section class="section">
+  <div class="section__doc">
+    <div class="request-header">
+      <div class="l-grid">
+        <div class="l-grid__item_3">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              Организация
+            </div>
+            ТЦ Авангард
+          </div>
+        </div>
+        <div class="l-grid__item_2">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              Месяц
+            </div>
+            Сентябрь
+          </div>
+        </div>
+        <div class="l-grid__item_2">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              с
+            </div>
+            03.09.18
+          </div>
+        </div>
+        <div class="l-grid__item_2">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              по
+            </div>
+            28.09.18
+          </div>
+        </div>
+        <div class="l-grid__item_3">
+          <div class="l-float_right">
+            <div class="usr_ava"></div>
+            Холмагоров Антон
+            <div class="o-text_small o-text_label">Ответственный</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="request-header__tabs">
+        <a class="request-header__tab-item" href="requests_edit.html">Расчет точки безубыточности</a>
+        <a class="request-header__tab-item request-header__tab-item_current" href="requests_settings.html">Настройка
+          ФП</a>
+      </div>
+    </div>
+    <div class="l-position_relative">
+      <div class="o-title">
+        Настройка дохода
+      </div>
+      <table class="o-table o-table_static">
+        <colgroup>
+          <col/>
+          <col width="33%"/>
+          <col width="33%"/>
+          <col/>
+          <col/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="o-table__th empty-cell"></th>
+          <th class="o-table__th">
+            Вид
+          </th>
+          <th class="o-table__th">
+            Способ
+          </th>
+          <th class="o-table__th">
+            Значение
+          </th>
+          <th class="o-table__th empty-cell"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Товар 1
+          </td>
+          <td class="o-table__td">
+            <div class="o-select o-select_table">
+              <svg class="o-icon">
+                <use xlink:href="#o-icon_back"></use>
+              </svg>
+              Запрос
+              <div class="o-select__list">
+                <div class="o-select__item">Запрос 1</div>
+                <div class="o-select__item">Запрос 2</div>
+                <div class="o-select__item">Запрос 3</div>
+                <div class="o-select__item">Запрос 4</div>
+                <div class="o-select__item">Запрос 5</div>
+                <div class="o-select__item">Запрос 6</div>
+              </div>
+            </div>
+          </td>
+          <td class="o-table__td">
+            <div class="o-select o-select_table">
+              <svg class="o-icon">
+                <use xlink:href="#o-icon_back"></use>
+              </svg>
+              Продажи
+              <div class="o-select__list">
+                <div class="o-select__item">Продажи 1</div>
+                <div class="o-select__item">Продажи 2</div>
+                <div class="o-select__item">Продажи 3</div>
+                <div class="o-select__item">Продажи 4</div>
+                <div class="o-select__item">Продажи 5</div>
+                <div class="o-select__item">Продажи 6</div>
+              </div>
+            </div>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Товар 1
+          </td>
+          <td class="o-table__td">
+            <div class="o-select o-select_table">
+              <svg class="o-icon">
+                <use xlink:href="#o-icon_back"></use>
+              </svg>
+              Запрос
+              <div class="o-select__list">
+                <div class="o-select__item">Запрос 1</div>
+                <div class="o-select__item">Запрос 2</div>
+                <div class="o-select__item">Запрос 3</div>
+                <div class="o-select__item">Запрос 4</div>
+                <div class="o-select__item">Запрос 5</div>
+                <div class="o-select__item">Запрос 6</div>
+              </div>
+            </div>
+          </td>
+          <td class="o-table__td">
+            <div class="o-select o-select_table">
+              <svg class="o-icon">
+                <use xlink:href="#o-icon_back"></use>
+              </svg>
+              Продажи
+              <div class="o-select__list">
+                <div class="o-select__item">Продажи 1</div>
+                <div class="o-select__item">Продажи 2</div>
+                <div class="o-select__item">Продажи 3</div>
+                <div class="o-select__item">Продажи 4</div>
+                <div class="o-select__item">Продажи 5</div>
+                <div class="o-select__item">Продажи 6</div>
+              </div>
+            </div>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Товар 1
+          </td>
+          <td class="o-table__td">
+            <div class="o-select o-select_table">
+              <svg class="o-icon">
+                <use xlink:href="#o-icon_back"></use>
+              </svg>
+              Запрос
+              <div class="o-select__list">
+                <div class="o-select__item">Запрос 1</div>
+                <div class="o-select__item">Запрос 2</div>
+                <div class="o-select__item">Запрос 3</div>
+                <div class="o-select__item">Запрос 4</div>
+                <div class="o-select__item">Запрос 5</div>
+                <div class="o-select__item">Запрос 6</div>
+              </div>
+            </div>
+          </td>
+          <td class="o-table__td">
+            <div class="o-select o-select_table">
+              <svg class="o-icon">
+                <use xlink:href="#o-icon_back"></use>
+              </svg>
+              Продажи
+              <div class="o-select__list">
+                <div class="o-select__item">Продажи 1</div>
+                <div class="o-select__item">Продажи 2</div>
+                <div class="o-select__item">Продажи 3</div>
+                <div class="o-select__item">Продажи 4</div>
+                <div class="o-select__item">Продажи 5</div>
+                <div class="o-select__item">Продажи 6</div>
+              </div>
+            </div>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Товар 1
+          </td>
+          <td class="o-table__td">
+            <div class="o-select o-select_table">
+              <svg class="o-icon">
+                <use xlink:href="#o-icon_back"></use>
+              </svg>
+              Запрос
+              <div class="o-select__list">
+                <div class="o-select__item">Запрос 1</div>
+                <div class="o-select__item">Запрос 2</div>
+                <div class="o-select__item">Запрос 3</div>
+                <div class="o-select__item">Запрос 4</div>
+                <div class="o-select__item">Запрос 5</div>
+                <div class="o-select__item">Запрос 6</div>
+              </div>
+            </div>
+          </td>
+          <td class="o-table__td">
+            <div class="o-select o-select_table">
+              <svg class="o-icon">
+                <use xlink:href="#o-icon_back"></use>
+              </svg>
+              Продажи
+              <div class="o-select__list">
+                <div class="o-select__item">Продажи 1</div>
+                <div class="o-select__item">Продажи 2</div>
+                <div class="o-select__item">Продажи 3</div>
+                <div class="o-select__item">Продажи 4</div>
+                <div class="o-select__item">Продажи 5</div>
+                <div class="o-select__item">Продажи 6</div>
+              </div>
+            </div>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            Товар 1
+          </td>
+          <td class="o-table__td">
+            <div class="o-select o-select_table">
+              <svg class="o-icon">
+                <use xlink:href="#o-icon_back"></use>
+              </svg>
+              Запрос
+              <div class="o-select__list">
+                <div class="o-select__item">Запрос 1</div>
+                <div class="o-select__item">Запрос 2</div>
+                <div class="o-select__item">Запрос 3</div>
+                <div class="o-select__item">Запрос 4</div>
+                <div class="o-select__item">Запрос 5</div>
+                <div class="o-select__item">Запрос 6</div>
+              </div>
+            </div>
+          </td>
+          <td class="o-table__td">
+            <div class="o-select o-select_table">
+              <svg class="o-icon">
+                <use xlink:href="#o-icon_back"></use>
+              </svg>
+              Продажи
+              <div class="o-select__list">
+                <div class="o-select__item">Продажи 1</div>
+                <div class="o-select__item">Продажи 2</div>
+                <div class="o-select__item">Продажи 3</div>
+                <div class="o-select__item">Продажи 4</div>
+                <div class="o-select__item">Продажи 5</div>
+                <div class="o-select__item">Продажи 6</div>
+              </div>
+            </div>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        </tbody>
+      </table>
+
+      <div class="l-grid_row"></div>
+      <div class="l-grid_row"></div>
+
+      <div class="clear">
+        <span class="o-title">
+          Настройка политики №1
+        </span>
+        <div class="l-float_right">
+        <span class="o-switcher o-switcher_title o-switcher_active">
+          Показать суммы
+        </span>
+        </div>
+      </div>
+
+      <div class="o-gradient-mask o-table_static">
+        <div class="l-overflow_x">
+          <table class="o-table">
+            <thead>
+            <tr>
+              <th class="o-table__th empty-cell"></th>
+              <th class="o-table__th" rowspan="2">
+                <div style="width:150px;">Фонд</div>
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="3">
+                Товар
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="3">
+                Услуга
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="3">
+                Товар
+              </th>
+              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="3">
+                Услуга
+              </th>
+            </tr>
+            <tr>
+              <th class="o-table__th empty-cell"></th>
+              <th class="o-table__th o-table__th_rowspan">
+                Правило
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Формула
+              </th>
+              <th class="o-table__th l-align_right o-table__th_rowspan o-table__td_hr">
+                Сумма
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Правило
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Формула
+              </th>
+              <th class="o-table__th l-align_right o-table__th_rowspan o-table__td_hr">
+                Сумма
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Правило
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Формула
+              </th>
+              <th class="o-table__th l-align_right o-table__th_rowspan o-table__td_hr">
+                Сумма
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Правило
+              </th>
+              <th class="o-table__th o-table__th_rowspan">
+                Формула
+              </th>
+              <th class="o-table__th l-align_right o-table__th_rowspan o-table__td_hr">
+                Сумма
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Фонд 1
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Фонд 1
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Фонд 1
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+
+            </tr>
+            <tr>
+              <td class="o-table__td empty-cell"></td>
+              <td class="o-table__td">
+                Фонд 1
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+              <td class="o-table__td">
+              <span class="o-link" onclick="showDialog('edit-rules')">
+                <svg class="o-icon">
+                  <use xlink:href="#o-icon_edit"></use>
+                </svg><span class="o-icon o-icon_darr">▼</span>
+              </span>
+              </td>
+              <td class="o-table__td">
+                <div class="o-text_ellipsis">[Доход:Прочие] - [Запрос:Услуги] + [Доход:Прочие] - [Запрос:Услуги]</div>
+              </td>
+              <td class="o-table__td l-align_right o-table__td_hr">
+                <div class="o-text_nowrap">200 000</div>
+              </td>
+
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div class="o-dialog-wrapper" id="edit-rules" style="background:rgba(0,0,0,.85)">
+  <div class="o-dialog o-dialog_edit">
+    <span class="o-dialog__close o-link">
+      <svg class="o-icon_close"><use xlink:href="#o-icon_close"></use></svg>
+    </span>
+    <div class="o-title_x">
+      Редактирование формулы
+    </div>
+    Формула составляется из переменных и арифмиметических операций + - * /.
+    В левой форме наход находится представление формулы, которое можно редактировать,
+    а в правой находятся переменные из которых можно брать расчетные данные,
+    для использования в формуле
+    <div class="l-grid_row">&#160;</div>
+    <div class="l-grid">
+      <div class="l-grid__item_4">
+        <div class="o-title">Формула</div>
+        <div class="o-textarea">
+          [Доход:Прочие] -
+          [Запрос:Услуги]  + [Сумма|
+        </div>
+        <div class="o-text_label_input">Введите формулу</div>
+      </div>
+      <div class="l-grid__item_4">
+        <div class="o-title">Переменные дохода</div>
+        <table class="o-table o-table_static o-table_border">
+          <thead>
+          <tr>
+            <th class="o-table__th">Вид</th>
+            <th class="o-table__th l-align_right">Сумма</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="o-table__td">Товар 1</td>
+            <td class="o-table__td l-align_right">200 000</td>
+          </tr>
+          <tr>
+            <td class="o-table__td">Товар 1</td>
+            <td class="o-table__td l-align_right">200 000</td>
+          </tr>
+          <tr>
+            <td class="o-table__td">Товар 1</td>
+            <td class="o-table__td l-align_right">200 000</td>
+          </tr>
+          <tr>
+            <td class="o-table__td">Товар 1</td>
+            <td class="o-table__td l-align_right">200 000</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="l-grid__item_4">
+        <div class="o-title">Переменные политики 1</div>
+        <table class="o-table o-table_static o-table_border">
+          <thead>
+          <tr>
+            <th class="o-table__th">Вид</th>
+            <th class="o-table__th l-align_right">Сумма</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="o-table__td">Товар 1</td>
+            <td class="o-table__td l-align_right">200 000</td>
+          </tr>
+          <tr>
+            <td class="o-table__td">Товар 1</td>
+            <td class="o-table__td l-align_right">200 000</td>
+          </tr>
+          <tr>
+            <td class="o-table__td">Товар 1</td>
+            <td class="o-table__td l-align_right">200 000</td>
+          </tr>
+          <tr>
+            <td class="o-table__td">Товар 1</td>
+            <td class="o-table__td l-align_right">200 000</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="l-grid_row">
+      <div class="o-title">
+        Расчет
+      </div>
+      <div class="l-grid_row">
+        120 000 - 1 151 000 +
+      </div>
+      <a href="#" class="o-link o-text_small">рассчитать</a>
+    </div>
+    <div class="o-submit-flex">
+      <span class="o-button_primary">Сохранить и продолжить</span>
+      <span class="o-button_secondary">Отменить</span>
+    </div>
+  </div>
+</div>
+
+<div id="system-panel"></div>
+</body>
+</html>

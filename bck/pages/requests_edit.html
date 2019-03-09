@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insight - Заявки</title>
+  <link rel="stylesheet" type="text/css" href="../style.css"/>
+  <link rel="import" href="../panel.html"/>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/functions.js"></script>
+</head>
+<body>
+<header class="header clear">
+  <div class="header__breadcrumbs l-float_left">
+    <span class="l-align_middle">Настройка ФП от 12.03.19</span>
+    <span class="o-link l-align_middle"><svg class="o-icon"><use xlink:href="#o-icon_help"></use></svg></span>
+  </div>
+  <div class="l-float_right header__user">
+    <img src="../demo/ava.png"/>
+    <div class="l-float_right">
+      <div>Абдулов Юрий</div>
+      <div class="o-text_small o-text_label">Учредитель</div>
+    </div>
+  </div>
+</header>
+<section class="section">
+  <div class="section__doc">
+    <div class="request-header">
+      <div class="l-grid">
+        <div class="l-grid__item_3">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              Организация
+            </div>
+            ТЦ Авангард
+          </div>
+        </div>
+        <div class="l-grid__item_2">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              Месяц
+            </div>
+            Сентябрь
+          </div>
+        </div>
+        <div class="l-grid__item_2">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              с
+            </div>
+            03.09.18
+          </div>
+        </div>
+        <div class="l-grid__item_2">
+          <div class="o-select">
+            <div class="o-text_small o-text_label">
+              по
+            </div>
+            28.09.18
+          </div>
+        </div>
+        <div class="l-grid__item_3">
+          <div class="l-float_right">
+            <div class="usr_ava"></div>
+            Холмагоров Антон
+            <div class="o-text_small o-text_label">Ответственный</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="request-header__tabs">
+        <a class="request-header__tab-item request-header__tab-item_current" href="requests_edit.html">Расчет точки безубыточности</a>
+        <a class="request-header__tab-item" href="requests_settings.html">Настройка ФП</a>
+      </div>
+    </div>
+    <div class="l-position_relative">
+      <div class="o-title">
+        Доход
+      </div>
+      <table class="o-table o-table_static">
+        <thead>
+        <tr>
+          <th class="o-table__th empty-cell"></th>
+          <th class="o-table__th">
+            Вид
+          </th>
+          <th class="o-table__th l-align_right">
+            Сумма
+          </th>
+          <th class="o-table__th l-align_right">
+            1-7 января
+          </th>
+          <th class="o-table__th l-align_right">
+            8-14 января
+          </th>
+          <th class="o-table__th l-align_right">
+            15-21 января
+          </th>
+          <th class="o-table__th l-align_right">
+            22-28 января
+          </th>
+          <th class="o-table__th"></th>
+          <th class="o-table__th empty-cell"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <div class="o-editable">Товар 1</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">800 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td">
+            <svg class="o-icon o-link"><use xlink:href="#o-icon_close"></use></svg>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <div class="o-editable">Товар 1</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">800 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td">
+            <svg class="o-icon o-link"><use xlink:href="#o-icon_close"></use></svg>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <div class="l-position_relative">
+              <input class=" o-input o-editable_input" value="Товар 1" />
+              <span class="o-link o-link_cancel"><svg class="o-icon"><use xlink:href="#o-icon_back"></use></svg></span>
+              <span class="o-link o-link_confirm"><svg class="o-icon"><use xlink:href="#o-icon_confirm"></use></svg></span>
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">800 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td">
+            <svg class="o-icon o-link"><use xlink:href="#o-icon_close"></use></svg>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <span class="o-link o-text_label o-text_small">+ ДОБАВИТЬ</span>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">2 400 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td">
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        </tbody>
+      </table>
+
+      <span class="o-title l-align_middle">
+        Расход
+      </span>
+      <span class="l-align_middle">
+        Осталось нераспределенных средств <span class="o-text_strong">732 400₽</span>
+      </span>
+      <table class="o-table o-table_static">
+        <thead>
+        <tr>
+          <th class="o-table__th empty-cell"></th>
+          <th class="o-table__th">
+            Вид
+          </th>
+          <th class="o-table__th l-align_right">
+            Сумма
+          </th>
+          <th class="o-table__th l-align_right">
+            1-7 января
+          </th>
+          <th class="o-table__th l-align_right">
+            8-14 января
+          </th>
+          <th class="o-table__th l-align_right">
+            15-21 января
+          </th>
+          <th class="o-table__th l-align_right">
+            22-28 января
+          </th>
+          <th class="o-table__th"></th>
+          <th class="o-table__th empty-cell"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+              <span class="o-text_strong o-text_drop">Политика</span>
+              &nbsp;
+              <span class="o-link"><svg class="o-icon"><use xlink:href="#o-icon_settings"></use></svg></span>
+          </td>
+          <td class="o-table__td l-align_right"></td>
+          <td class="o-table__td l-align_right"></td>
+          <td class="o-table__td l-align_right"></td>
+          <td class="o-table__td l-align_right"></td>
+          <td class="o-table__td l-align_right"></td>
+          <td class="o-table__td"></td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <div class="o-editable">Товар 1</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">800 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td">
+            <svg class="o-icon o-link"><use xlink:href="#o-icon_close"></use></svg>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <div class="o-editable">Товар 1</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">800 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td">
+            <svg class="o-icon o-link"><use xlink:href="#o-icon_close"></use></svg>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <div class="l-position_relative">
+              <input class=" o-input o-editable_input" value="Товар 1" />
+              <span class="o-link o-link_cancel"><svg class="o-icon"><use xlink:href="#o-icon_back"></use></svg></span>
+              <span class="o-link o-link_confirm"><svg class="o-icon"><use xlink:href="#o-icon_confirm"></use></svg></span>
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">800 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td">
+            <svg class="o-icon o-link"><use xlink:href="#o-icon_close"></use></svg>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td no-padding"></td>
+          <td class="o-table__td">
+            <span class="o-link o-text_label o-text_small">+ ДОБАВИТЬ</span>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">2 400 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td">
+          </td>
+          <td class="o-table__td no-padding"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+              <span class="o-text_strong o-text_drop">Заливка</span>
+          </td>
+          <td class="o-table__td l-align_right"></td>
+          <td class="o-table__td l-align_right"></td>
+          <td class="o-table__td l-align_right"></td>
+          <td class="o-table__td l-align_right"></td>
+          <td class="o-table__td l-align_right"></td>
+          <td class="o-table__td"></td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <div class="l-position_relative">
+              <div class="request-loader"></div>
+              <div class="o-editable">Товар 1</div>
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">800 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td">
+            <svg class="o-icon o-link"><use xlink:href="#o-icon_close"></use></svg>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr class="request_done">
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <div class="o-editable">Товар 1</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">800 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td">
+            <svg class="o-icon o-link"><use xlink:href="#o-icon_close"></use></svg>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <div class="l-position_relative">
+              <input class=" o-input o-editable_input" value="Товар 1" />
+              <span class="o-link o-link_cancel"><svg class="o-icon"><use xlink:href="#o-icon_back"></use></svg></span>
+              <span class="o-link o-link_confirm"><svg class="o-icon"><use xlink:href="#o-icon_confirm"></use></svg></span>
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_strong">800 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td l-align_right">
+            200 000
+          </td>
+          <td class="o-table__td">
+            <svg class="o-icon o-link"><use xlink:href="#o-icon_close"></use></svg>
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="o-table__td empty-cell"></td>
+          <td class="o-table__td">
+            <span class="o-link o-text_label o-text_small">+ ДОБАВИТЬ</span>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">2 400 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td l-align_right">
+            <div class="o-text_label">600 000</div>
+          </td>
+          <td class="o-table__td">
+          </td>
+          <td class="o-table__td empty-cell"></td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="o-status_saved" style="margin-top: -150px;">
+        <svg class="o-icon"><use xlink:href="#o-icon_confirm"></use></svg>
+        Изменения сохранены
+      </div>
+      <div class="o-popup-status">
+        В настройки внесены изменения
+        <span class="o-button_primary">Сохранить</span>
+        <span class="o-link">
+          <svg class="o-icon"><use xlink:href="#o-icon_close"></use></svg>
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div id="system-panel"></div>
+</body>
+</html>
