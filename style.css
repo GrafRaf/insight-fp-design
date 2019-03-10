@@ -119,6 +119,10 @@ body, html {
   font-weight: 700;
 }
 
+.o-text_nowrap {
+  white-space: nowrap;
+}
+
 .o-title {
   font-size: var(--text-size-xl);
   padding-top: 5px;
@@ -126,7 +130,7 @@ body, html {
   font-weight: 600;
 }
 
-.o-button {
+[class*="o-button"] {
   font-size: var(--text-size-xs);
   font-weight: 600;
   color: #fff;
@@ -139,8 +143,17 @@ body, html {
   text-align: center;
   text-decoration: none !important;
   border-radius: 20px;
+  background: var(--background-body);
+}
+
+.o-button_primary {
   background: var(--gradient-first);
   background: linear-gradient(to right, var(--gradient-first) 0%, var(--gradient-second) 100%);
+}
+
+.o-button_cancel {
+  background: transparent none;
+  color: var(--color-base);
 }
 
 .o-select {
@@ -152,6 +165,7 @@ body, html {
   cursor: pointer;
 }
 
+.o-icon_drop::after,
 .o-select::after {
   content: "▼";
   color: var(--color-light);
@@ -162,6 +176,15 @@ body, html {
   top: 50%;
   transform: scaleX(1.75);
   opacity: 0.5;
+}
+
+.o-icon_drop {
+  position: relative;
+  display: inline-block;
+  margin-left: 4px;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
 }
 
 .o-select__list {
@@ -237,12 +260,20 @@ body, html {
   text-transform: uppercase;
   padding: 1.1875rem .9375rem 1.0625rem;
   color: var(--color-light);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
 }
 
 .o-table__td {
   padding: .9375rem .9375rem .875rem;
   border-top: 1px solid var(--color-border);
+}
+
+.o-table__group {
+  border-left: 1px solid var(--color-border);
+}
+
+.o-table__group_current {
+  background: var(--background-body);
 }
 
 tr:hover .o-table__td {
@@ -257,6 +288,20 @@ tr:hover .o-table__td {
 .o-table__th:last-child,
 .o-table__td:last-child {
   padding-right: 1.875rem;
+}
+
+tr:first-child .o-table__th_rowspan {
+  border-bottom: 0;
+  padding-top: 0.875rem;
+}
+
+tr:nth-child(2) .o-table__th_rowspan {
+  padding-top: 0;
+  padding-bottom: 0.75rem
+}
+
+.o-table__sum {
+  color: var(--color-light);
 }
 
 .o-switcher {
@@ -304,6 +349,27 @@ tr:hover .o-table__td {
 
 .o-switcher + .o-switcher {
   margin-left: 1.8125rem;
+}
+
+.o-popup-status {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.25rem 3.125rem 1.25rem 134px;
+  color: #fff;
+  font-size: var(--text-size-x);
+  background: var(--background-mask);
+  text-align: center;
+  z-index: 40;
+}
+
+.o-popup-status .o-button_primary {
+  margin-left: 2rem;
+}
+
+.o-popup-status .o-button_cancel {
+  color: #fff;
 }
 
 /* LAYOUTS */
@@ -364,7 +430,7 @@ tr:hover .o-table__td {
   line-height: 1.334;
 }
 
-.header .o-button {
+.header .o-button_primary {
   float: left;
   margin: 3px 0 0 1.875rem;
 }
@@ -486,11 +552,16 @@ a.o-menu__item:visited {
   margin: 0.5rem 1rem 0 2rem;
 }
 
-.o-container {
+.o-container, .o-table_static {
   border-radius: 4px;
   border: solid 1px var(--color-border);
   background-color: var(--background-panel);
   margin-bottom: 1.75rem;
+}
+
+.o-table_static {
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .o-pagination {
@@ -535,9 +606,56 @@ a.o-menu__item:visited {
 }
 
 .request-header__tabs {
+  padding: 1.25rem 0 1.875rem;
+}
 
+.request-header__tabs::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .request-header__tab-item {
+  padding: 1rem 0;
+  float: left;
+  margin-right: 30px;
+  font-size: var(--text-size-x);
+  cursor: pointer;
+  color: var(--color-light);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
 
+.request-header__tab-item_current {
+  border-color: var(--gradient-first);
+  color: var(--color-base);
+  cursor: default;
+}
+
+.request-sum {
+  padding-bottom: 0.75rem;
+}
+
+.request-sum__item {
+  width: calc(50% - 1rem);
+  height: 3.75rem;
+  float: left;
+  background: var(--background-button_second);
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 12px 0;
+  margin-left: 1rem;
+}
+
+.request-sum__item:first-child {
+  background: var(--background-button_first);
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+.request-sum__label {
+  font-weight: 400;
 }
