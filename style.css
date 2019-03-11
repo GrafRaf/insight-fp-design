@@ -239,6 +239,16 @@ body, html {
   transition: fill var(--transition);
 }
 
+.o-link_accident {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-light);
+  font-size: var(--text-size-xs);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
 .marked {
   position: relative;
   display: inline-block;
