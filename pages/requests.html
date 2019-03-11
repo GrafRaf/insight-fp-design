@@ -15,44 +15,31 @@
   <div class="header__breadcrumbs l-float_left">
     Заявки
   </div>
-  <div class="l-float_right header__user">
-    <img src="../demo/ava.png"/>
-    <div class="l-float_right">
-      <div>Абдулов Юрий</div>
-      <div class="o-text_small o-text_label">Учредитель</div>
-    </div>
-  </div>
+  <a class="o-button_primary" href="requests_create_new.html">Создать</a>
+  <svg class="o-link o-icon l-float_left">
+    <use xlink:href="#o-icon_search"></use>
+  </svg>
 </header>
 <section class="section">
   <div class="section__header clear">
     <div class="o-filter l-float_left">
-      <span class="o-filter__item">Все</span>
-      <span class="o-filter__item active">Подготовлена</span>
-      <span class="o-filter__item">Одобрена</span>
-      <span class="o-filter__item">Рассматривается на ФП</span>
-      <span class="o-filter__item">Черновик</span>
+      <span class="o-filter__item">Все 1256</span>
+      <span class="o-filter__item active">Подготовлена 24</span>
+      <span class="o-filter__item">Одобрена 768</span>
+      <span class="o-filter__item">Рассматривается на ФП 12</span>
+      <span class="o-filter__item">Черновик 56</span>
     </div>
-    <div class="o-select l-float_left">
-      14.03.18 - 25.08.18
-    </div>
-    <div class="l-float_right">
-      <a class="o-button" href="requests_create_new.html">Создать</a>
-    </div>
-  </div>
-  <div class="section__header clear l-position_relative">
-    <h1 class="o-title l-float_left">
-      80 заявок
-    </h1>
-    <svg class="o-link o-icon l-float_left">
-      <use xlink:href="#o-icon_search"></use>
-    </svg>
-    <div class="l-float_right o-text">
-      <span class="o-link_with-icon" onclick="showDialog('filter-dialog')">
+    <div class="l-float_right section__header-filter">
+      <span class="o-link_with-icon">
         <span class="marked">
         <svg class="o-icon marked">
           <use xlink:href="#o-icon_filter"></use>
         </svg></span>Фильтры
       </span>
+    </div>
+    <div class="o-select l-float_right">
+      14.03.18 - 25.08.18
+      <div class="o-text_label">За период</div>
     </div>
   </div>
   <div class="o-container">
@@ -62,7 +49,7 @@
         <th class="o-table__th">
           <div class="o-table__sort o-table__sort_asc">Дата</div>
         </th>
-        <th class="o-table__th">
+        <th class="o-table__th" style="width:68px;">
           <div class="o-table__sort o-table__sort_desc">Номер</div>
         </th>
         <th class="o-table__th">
@@ -77,7 +64,7 @@
         <th class="o-table__th">
           <div class="o-table__sort">Предмет</div>
         </th>
-        <th class="o-table__th">
+        <th class="o-table__th" style="width:150px;">
           <div class="o-table__sort">подразделение</div>
         </th>
         <th class="o-table__th">
@@ -86,6 +73,7 @@
         <th class="o-table__th l-align_right">
           <div class="o-table__sort">сумма</div>
         </th>
+        <th class="o-table__th" style="width:14px;"></th>
       </tr>
       </thead>
       <tbody>
@@ -121,6 +109,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_rejected" onclick="window.open('requests_view.html', '_self');">
         <td class="o-table__td">
@@ -154,6 +143,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_prepared" onclick="window.open('requests_view.html', '_self');">
         <td class="o-table__td">
@@ -187,6 +177,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_draft" onclick="window.open('requests_view.html', '_self');">
         <td class="o-table__td">
@@ -220,6 +211,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_preapproved" onclick="window.open('requests_view.html', '_self');">
         <td class="o-table__td">
@@ -253,8 +245,9 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
-      <tr class="status_prepared" onclick="window.open('requests_view.html', '_self');">
+      <tr class="status_closed" onclick="window.open('requests_view.html', '_self');">
         <td class="o-table__td">
           <span class="o-status"></span>
           09.08.18
@@ -286,6 +279,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_prepared selected">
         <td class="o-table__td">
@@ -315,6 +309,11 @@
           Услуги
         </td>
         <td class="o-table__td l-align_right">
+          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
+          <div class="o-text_nowrap">388 688 ₽</div>
+          <div class="o-text_nowrap">345 346 ₽</div>
+        </td>
+        <td class="o-table__td">
           <div class="l-position_relative">
             <svg class="o-link o-icon_more">
               <use xlink:href="#o-icon_more"></use>
@@ -328,9 +327,6 @@
               <a class="o-dropdown-list__item o-dropdown-list__item_close" href="#">Закрыть</a>
             </div>
           </div>
-          <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
-          <div class="o-text_nowrap">388 688 ₽</div>
-          <div class="o-text_nowrap">345 346 ₽</div>
         </td>
       </tr>
       <tr class="status_prepared">
@@ -361,7 +357,7 @@
           Услуги
         </td>
         <td class="o-table__td l-align_right">
-          <div class="l-position_relative">
+          <!--<div class="l-position_relative">
             <svg class="o-link o-icon_more">
               <use xlink:href="#o-icon_more"></use>
             </svg>
@@ -417,11 +413,12 @@
                 <div class="o-text_increased o-text_strong">733 842 ₽</div>
               </div>
             </div>
-          </div>
+          </div>-->
           <div class="o-text_strong o-text_nowrap">800 000 ₽</div>
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_prepared">
         <td class="o-table__td">
@@ -455,6 +452,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_prepared">
         <td class="o-table__td">
@@ -488,6 +486,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_prepared">
         <td class="o-table__td">
@@ -521,6 +520,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_prepared">
         <td class="o-table__td">
@@ -554,6 +554,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_prepared">
         <td class="o-table__td">
@@ -587,6 +588,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_prepared">
         <td class="o-table__td">
@@ -620,6 +622,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_prepared">
         <td class="o-table__td">
@@ -653,6 +656,7 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
       <tr class="status_prepared">
         <td class="o-table__td">
@@ -686,35 +690,36 @@
           <div class="o-text_nowrap">388 688 ₽</div>
           <div class="o-text_nowrap">345 346 ₽</div>
         </td>
+        <td class="o-table__td"></td>
       </tr>
 
       </tbody>
     </table>
   </div>
-  <div class="o-pagination l-grid">
-    <div class="l-grid__item_3">
-      <div class="o-text_label o-text_small">Записей 1-50 из 3651</div>
-    </div>
-    <div class="l-grid__item_6 o-pagination__list clear">
+  <div class="o-pagination clear">
+    <div class="o-pagination__list l-float_left">
       <svg class="o-icon o-link">
         <use xlink:href="#o-icon_arrow-left"></use>
       </svg>
       <span class="o-pagination__item">1</span>
+      <span class="o-pagination__item">2</span>
+      <span class="o-pagination__item">3</span>
+      <span class="o-pagination__item active">4</span>
+      <span class="o-pagination__item">5</span>
       <span class="o-pagination__item">...</span>
-      <span class="o-pagination__item">223</span>
-      <span class="o-pagination__item active">224</span>
-      <span class="o-pagination__item">225</span>
-      <span class="o-pagination__item">...</span>
-      <span class="o-pagination__item">1006</span>
+      <span class="o-pagination__item">15</span>
       <svg class="o-icon o-link">
         <use xlink:href="#o-icon_arrow-right"></use>
       </svg>
     </div>
-    <div class="l-grid__item_2"></div>
-    <div class="l-grid__item_1">
+    <div class="l-float_right">
       <div class="o-select">
         50
+        <div class="o-text_label">По</div>
       </div>
+    </div>
+    <div class="l-float_right">
+      <span class="o-text_light o-text_small">Записей 1-50 из 3651</span>
     </div>
   </div>
 </section>
