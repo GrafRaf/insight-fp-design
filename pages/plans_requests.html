@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="l-grid__item_1">
-          <div class="o-select o-text_ellipsis">
+          <div class="o-select">
             <div class="o-text_label">
               Дата
             </div>
@@ -92,13 +92,26 @@
 
     <div class="section__header clear">
       <div class="o-filter l-float_left">
-        <span class="o-filter__item">Все</span>
-        <span class="o-filter__item active">Ожидают</span>
-        <span class="o-filter__item">Отклоненные</span>
-        <span class="o-filter__item">Одобренные</span>
+        <span class="o-filter__item active">Все 1256</span>
+        <span class="o-filter__item">Ожидают 24</span>
+        <span class="o-filter__item">Отклоненные 567</span>
+        <span class="o-filter__item">Одобренные 459</span>
       </div>
+      <div class="l-float_left">
+        <a class="o-button_primary" href="#">Создать</a>
+      </div>
+
       <div class="l-float_right">
-        <a class="o-button" href="#">Создать</a>
+         <span class="o-select o-select_inline o-text_light">
+            Сортировать по остатку
+          </span>
+
+        <span class="o-link_with-icon">
+          <span class="marked">
+            <svg class="o-icon marked">
+              <use xlink:href="#o-icon_filter"></use>
+            </svg></span>Фильтры
+          </span>
       </div>
     </div>
 
@@ -109,38 +122,19 @@
             Всего 474 заявки
           </div>
         </div>
-        <div class="l-grid__item_2 l-align_right o-text">
-           <span class="o-link_with-icon o-text_drop">
-            По остатку
-          </span>
-        </div>
-        <div class="l-grid__item_2 l-align_right o-text">
 
-           <span class="o-link_with-icon">
-            <span class="marked">
-              <svg class="o-icon marked">
-                <use xlink:href="#o-icon_filter"></use>
-              </svg></span>Фильтры
-          </span>
-
-        </div>
       </div>
-
       <table class="o-table o-table_static o-table_fixed">
         <colgroup>
-          <col width="20px" />
           <col width="22%" />
-          <col width="10%" />
+          <col width="12%" />
           <col />
-          <col width="14%" />
-          <col width="10%" />
-          <col width="10%" />
-          <col width="10%" />
-          <col width="20px" />
+          <col width="13%" />
+          <col width="13%" />
+          <col width="13%" />
         </colgroup>
         <thead>
         <tr>
-          <th class="o-table__th empty-cell"></th>
           <th class="o-table__th">
             Вид
           </th>
@@ -159,28 +153,26 @@
           <th class="o-table__th l-align_right">
             Остаток
           </th>
-          <th class="o-table__th l-align_right">
-            Начисление
-          </th>
-          <th class="o-table__th empty-cell"></th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="o-table__td empty-cell"></td>
-          <td class="o-table__td" colspan="7">
-            <span class="o-text_strong o-text_drop">Налоги 2</span>
+          <td class="o-table__td" colspan="6">
+            <span class="o-text_strong o-text_nowrap">
+              Налоги 2
+              <span class="o-icon_drop"></span>
+            </span>
           </td>
-          <td class="o-table__td empty-cell"></td>
         </tr>
         <tr>
-          <td class="o-table__td empty-cell"></td>
           <td class="o-table__td">
-            <div>
-              Налог 1
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
             </div>
-            <span class="o-link_with-icon o-text_drop o-text_dashed">По остатку</span>
-            <span class="o-text_label">до 19.02.19</span>
           </td>
           <td class="o-table__td">
             Статья №1
@@ -199,19 +191,16 @@
           <td class="o-table__td l-align_center">
             490 000
           </td>
-          <td class="o-table__td l-align_center">
-            1500
-          </td>
-          <td class="o-table__td empty-cell"></td>
         </tr>
         <tr>
-          <td class="o-table__td empty-cell"></td>
           <td class="o-table__td">
-            <div>
-              Налог 2
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
             </div>
-            <span class="o-link_with-icon o-text_drop o-text_dashed">По остатку</span>
-            <span class="o-text_label">до 19.02.19</span>
           </td>
           <td class="o-table__td">
             Статья №1
@@ -230,31 +219,326 @@
           <td class="o-table__td l-align_center">
             490 000
           </td>
+        </tr>
+        <tr>
+          <td class="o-table__td" colspan="6">
+            <span class="o-text_strong o-text_nowrap">
+              Налоги 2
+              <span class="o-icon_drop"></span>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td">
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
+            </div>
+          </td>
+          <td class="o-table__td">
+            Статья №1
+          </td>
+          <td class="o-table__td">
+            <div class="o-text_ellipsis">
+              Купить компьютер Dell по максимально выгодной цене
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            800 000
+          </td>
+          <td class="o-table__td l-align_right">
+            490 000
+          </td>
           <td class="o-table__td l-align_center">
-            1500
+            490 000
           </td>
-          <td class="o-table__td empty-cell"></td>
         </tr>
         <tr>
-          <td class="o-table__td"></td>
-          <td class="o-table__td" colspan="7">
-            <span class="o-text_label o-link o-text_small">+ ДОБАВИТЬ</span>
+          <td class="o-table__td">
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
+            </div>
           </td>
-          <td class="o-table__td"></td>
+          <td class="o-table__td">
+            Статья №1
+          </td>
+          <td class="o-table__td">
+            <div class="o-text_ellipsis">
+              Купить компьютер Dell по максимально выгодной цене
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            800 000
+          </td>
+          <td class="o-table__td l-align_right">
+            490 000
+          </td>
+          <td class="o-table__td l-align_center">
+            490 000
+          </td>
         </tr>
         <tr>
-          <td class="o-table__td"></td>
-          <td class="o-table__td" colspan="7">
-            <span class="o-text_strong o-text_drop collapsed">Зарплата 7</span>
+          <td class="o-table__td" colspan="6">
+            <span class="o-text_strong o-text_nowrap">
+              Налоги 2
+              <span class="o-icon_drop"></span>
+            </span>
           </td>
-          <td class="o-table__td"></td>
         </tr>
         <tr>
-          <td class="o-table__td"></td>
-          <td class="o-table__td" colspan="7">
-            <span class="o-text_strong o-text_drop collapsed">Зарплата 4</span>
+          <td class="o-table__td">
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
+            </div>
           </td>
-          <td class="o-table__td"></td>
+          <td class="o-table__td">
+            Статья №1
+          </td>
+          <td class="o-table__td">
+            <div class="o-text_ellipsis">
+              Купить компьютер Dell по максимально выгодной цене
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            800 000
+          </td>
+          <td class="o-table__td l-align_right">
+            490 000
+          </td>
+          <td class="o-table__td l-align_center">
+            490 000
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td">
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
+            </div>
+          </td>
+          <td class="o-table__td">
+            Статья №1
+          </td>
+          <td class="o-table__td">
+            <div class="o-text_ellipsis">
+              Купить компьютер Dell по максимально выгодной цене
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            800 000
+          </td>
+          <td class="o-table__td l-align_right">
+            490 000
+          </td>
+          <td class="o-table__td l-align_center">
+            490 000
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td" colspan="6">
+            <span class="o-text_strong o-text_nowrap">
+              Налоги 2
+              <span class="o-icon_drop"></span>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td">
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
+            </div>
+          </td>
+          <td class="o-table__td">
+            Статья №1
+          </td>
+          <td class="o-table__td">
+            <div class="o-text_ellipsis">
+              Купить компьютер Dell по максимально выгодной цене
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            800 000
+          </td>
+          <td class="o-table__td l-align_right">
+            490 000
+          </td>
+          <td class="o-table__td l-align_center">
+            490 000
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td">
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
+            </div>
+          </td>
+          <td class="o-table__td">
+            Статья №1
+          </td>
+          <td class="o-table__td">
+            <div class="o-text_ellipsis">
+              Купить компьютер Dell по максимально выгодной цене
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            800 000
+          </td>
+          <td class="o-table__td l-align_right">
+            490 000
+          </td>
+          <td class="o-table__td l-align_center">
+            490 000
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td" colspan="6">
+            <span class="o-text_strong o-text_nowrap">
+              Налоги 2
+              <span class="o-icon_drop"></span>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td">
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
+            </div>
+          </td>
+          <td class="o-table__td">
+            Статья №1
+          </td>
+          <td class="o-table__td">
+            <div class="o-text_ellipsis">
+              Купить компьютер Dell по максимально выгодной цене
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            800 000
+          </td>
+          <td class="o-table__td l-align_right">
+            490 000
+          </td>
+          <td class="o-table__td l-align_center">
+            490 000
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td">
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
+            </div>
+          </td>
+          <td class="o-table__td">
+            Статья №1
+          </td>
+          <td class="o-table__td">
+            <div class="o-text_ellipsis">
+              Купить компьютер Dell по максимально выгодной цене
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            800 000
+          </td>
+          <td class="o-table__td l-align_right">
+            490 000
+          </td>
+          <td class="o-table__td l-align_center">
+            490 000
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td" colspan="6">
+            <span class="o-text_strong o-text_nowrap">
+              Налоги 2
+              <span class="o-icon_drop"></span>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td">
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
+            </div>
+          </td>
+          <td class="o-table__td">
+            Статья №1
+          </td>
+          <td class="o-table__td">
+            <div class="o-text_ellipsis">
+              Купить компьютер Dell по максимально выгодной цене
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            800 000
+          </td>
+          <td class="o-table__td l-align_right">
+            490 000
+          </td>
+          <td class="o-table__td l-align_center">
+            490 000
+          </td>
+        </tr>
+        <tr>
+          <td class="o-table__td">
+            Налог №1
+            <div class="o-text_nowrap">
+              <span class="o-select o-select_inline">
+              Ожидает
+            </span>
+              <span class="o-text_light">до 19.02</span>
+            </div>
+          </td>
+          <td class="o-table__td">
+            Статья №1
+          </td>
+          <td class="o-table__td">
+            <div class="o-text_ellipsis">
+              Купить компьютер Dell по максимально выгодной цене
+            </div>
+          </td>
+          <td class="o-table__td l-align_right">
+            800 000
+          </td>
+          <td class="o-table__td l-align_right">
+            490 000
+          </td>
+          <td class="o-table__td l-align_center">
+            490 000
+          </td>
         </tr>
         </tbody>
       </table>
@@ -263,17 +547,19 @@
     <div class="o-popup-reports">
       <div class="o-popup-reports__header">
         <div class="l-grid">
-          <div class="l-grid__item_4">
-            <span class="header__breadcrumbs">Отчет</span>
+          <div class="l-grid__item_2">
+            <span class="header__breadcrumbs">Отчеты</span>
+          </div>
+          <div class="l-grid__item_3">
             <span class="o-text_error">2 конфликта</span>
           </div>
-          <div class="l-grid__item_4 request-sum">
+          <div class="l-grid__item_3 request-sum">
             <div class="request-sum__label">Сумма к распределению</div>
-            303 314 000 <sup>₽</sup>
+            303 314 000 ₽
           </div>
-          <div class="l-grid__item_4 request-sum">
+          <div class="l-grid__item_3 request-sum">
             <div class="request-sum__label">Остаток к распределению</div>
-            7 041 000 <sup>₽</sup>
+            7 041 000 ₽
           </div>
         </div>
         <svg class="o-icon_toggle is-rotated o-link">
@@ -285,46 +571,39 @@
           <table class="o-table">
             <thead>
             <tr>
-              <th class="o-table__th empty-cell"></th>
-              <th class="o-table__th"></th>
-              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">До планирования</th>
-              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="2">Финансовый план</th>
-              <th class="o-table__th l-align_center o-table__th_rowspan" colspan="3">После планирования</th>
-              <th class="o-table__th empty-cell"></th>
+              <th class="o-table__th o-table__group" rowspan="2">Фонд</th>
+              <th class="o-table__th l-align_center o-table__th_rowspan o-table__group" colspan="2">До планирования</th>
+              <th class="o-table__th l-align_center o-table__th_rowspan o-table__group o-table__group_current" colspan="2">Финансовый план</th>
+              <th class="o-table__th l-align_center o-table__th_rowspan o-table__group" colspan="3">После планирования</th>
             </tr>
             <tr>
-              <th class="o-table__th empty-cell"></th>
-              <th class="o-table__th">Фонд</th>
-              <th class="o-table__th l-align_right o-table__th_rowspan">Одобрено и неоплачено</th>
+              <th class="o-table__th l-align_right o-table__th_rowspan o-table__group">Одобрено и неоплачено</th>
               <th class="o-table__th l-align_right o-table__th_rowspan">Свободный остаток</th>
-              <th class="o-table__th l-align_right o-table__th_rowspan">Одобрено по заявкам</th>
-              <th class="o-table__th l-align_right o-table__th_rowspan">Приход/расход</th>
-              <th class="o-table__th l-align_right o-table__th_rowspan">одобрено по заявкам</th>
+              <th class="o-table__th l-align_right o-table__th_rowspan o-table__group o-table__group_current">Одобрено по заявкам</th>
+              <th class="o-table__th l-align_right o-table__th_rowspan o-table__group_current">Приход/расход</th>
+              <th class="o-table__th l-align_right o-table__th_rowspan o-table__group">одобрено по заявкам</th>
               <th class="o-table__th l-align_right o-table__th_rowspan">свободный остаток</th>
               <th class="o-table__th l-align_right o-table__th_rowspan">итоговый остаток</th>
-              <th class="o-table__th empty-cell"></th>
             </tr>
             </thead>
             <tbody>
             <tr>
-              <td class="o-table__td empty-cell"></td>
               <td class="o-table__td">
                 Налоги
               </td>
-              <td class="o-table__td l-align_right">
+              <td class="o-table__td l-align_right o-table__group">
                 800 000
               </td>
               <td class="o-table__td l-align_right">
                 200 000
               </td>
-              <td class="o-table__td l-align_right">
-                180 000
+              <td class="o-table__td l-align_right o-table__group o-table__group_current">
+                <span class="o-text_strong">180 000</span>
               </td>
-              <td class="o-table__td l-align_right">
-                <span class="o-text_error">200 000</span>&nbsp;
-                <svg class="o-icon"><use xlink:href="#o-icon_error"></use></svg>
+              <td class="o-table__td l-align_right o-table__group_current">
+                <span class="o-text_strong o-text_error">200 000</span>&nbsp;
               </td>
-              <td class="o-table__td l-align_right">
+              <td class="o-table__td o-table__group l-align_right">
                 180 000
               </td>
               <td class="o-table__td l-align_right">
@@ -333,20 +612,24 @@
               <td class="o-table__td l-align_right">
                 180 000
               </td>
-              <td class="o-table__td empty-cell"></td>
             </tr>
             <tr>
-              <td class="o-table__td empty-cell"></td>
               <td class="o-table__td">
                 Налоги
               </td>
-              <td class="o-table__td l-align_right">
+              <td class="o-table__td l-align_right o-table__group">
                 800 000
               </td>
               <td class="o-table__td l-align_right">
                 200 000
               </td>
-              <td class="o-table__td l-align_right">
+              <td class="o-table__td l-align_right o-table__group o-table__group_current">
+                <span class="o-text_strong">180 000</span>
+              </td>
+              <td class="o-table__td l-align_right o-table__group_current">
+                <span class="o-text_strong">200 000</span>&nbsp;
+              </td>
+              <td class="o-table__td o-table__group l-align_right">
                 180 000
               </td>
               <td class="o-table__td l-align_right">
@@ -355,33 +638,24 @@
               <td class="o-table__td l-align_right">
                 180 000
               </td>
-              <td class="o-table__td l-align_right">
-                200 000
-              </td>
-              <td class="o-table__td l-align_right">
-                180 000
-              </td>
-              <td class="o-table__td empty-cell"></td>
             </tr>
             <tr>
-              <td class="o-table__td empty-cell"></td>
               <td class="o-table__td">
                 Налоги
               </td>
-              <td class="o-table__td l-align_right">
+              <td class="o-table__td l-align_right o-table__group">
                 800 000
               </td>
               <td class="o-table__td l-align_right">
                 200 000
               </td>
-              <td class="o-table__td l-align_right">
-                <span class="o-text_error">180 000</span>&nbsp;
-                <svg class="o-icon"><use xlink:href="#o-icon_error"></use></svg>
+              <td class="o-table__td l-align_right o-table__group o-table__group_current">
+                <span class="o-text_strong o-text_error">180 000</span>
               </td>
-              <td class="o-table__td l-align_right">
-                200 000
+              <td class="o-table__td l-align_right o-table__group_current">
+                <span class="o-text_strong">200 000</span>&nbsp;
               </td>
-              <td class="o-table__td l-align_right">
+              <td class="o-table__td o-table__group l-align_right">
                 180 000
               </td>
               <td class="o-table__td l-align_right">
@@ -390,20 +664,24 @@
               <td class="o-table__td l-align_right">
                 180 000
               </td>
-              <td class="o-table__td empty-cell"></td>
             </tr>
-            <tr class="o-text_label">
-              <td class="o-table__td empty-cell"></td>
+            <tr>
               <td class="o-table__td">
-                Итого
+                Налоги
               </td>
-              <td class="o-table__td l-align_right">
+              <td class="o-table__td l-align_right o-table__group">
                 800 000
               </td>
               <td class="o-table__td l-align_right">
                 200 000
               </td>
-              <td class="o-table__td l-align_right">
+              <td class="o-table__td l-align_right o-table__group o-table__group_current">
+                <span class="o-text_strong">180 000</span>
+              </td>
+              <td class="o-table__td l-align_right o-table__group_current">
+                <span class="o-text_strong">200 000</span>&nbsp;
+              </td>
+              <td class="o-table__td o-table__group l-align_right">
                 180 000
               </td>
               <td class="o-table__td l-align_right">
@@ -412,20 +690,71 @@
               <td class="o-table__td l-align_right">
                 180 000
               </td>
+            </tr>
+            <tr>
+              <td class="o-table__td">
+                Налоги
+              </td>
+              <td class="o-table__td l-align_right o-table__group">
+                800 000
+              </td>
+              <td class="o-table__td l-align_right">
+                200 000
+              </td>
+              <td class="o-table__td l-align_right o-table__group o-table__group_current">
+                <span class="o-text_strong">180 000</span>
+              </td>
+              <td class="o-table__td l-align_right o-table__group_current">
+                <span class="o-text_strong">200 000</span>&nbsp;
+              </td>
+              <td class="o-table__td o-table__group l-align_right">
+                180 000
+              </td>
               <td class="o-table__td l-align_right">
                 200 000
               </td>
               <td class="o-table__td l-align_right">
                 180 000
               </td>
-              <td class="o-table__td empty-cell"></td>
+            </tr>
+            <tr>
+              <td class="o-table__td">
+                Налоги
+              </td>
+              <td class="o-table__td l-align_right o-table__group">
+                800 000
+              </td>
+              <td class="o-table__td l-align_right">
+                200 000
+              </td>
+              <td class="o-table__td l-align_right o-table__group o-table__group_current">
+                <span class="o-text_strong">180 000</span>
+              </td>
+              <td class="o-table__td l-align_right o-table__group_current">
+                <span class="o-text_strong">200 000</span>&nbsp;
+              </td>
+              <td class="o-table__td o-table__group l-align_right">
+                180 000
+              </td>
+              <td class="o-table__td l-align_right">
+                200 000
+              </td>
+              <td class="o-table__td l-align_right">
+                180 000
+              </td>
             </tr>
             </tbody>
           </table>
         </div>
         <div class="o-popup-reports__footer">
-          Итоговый остаток после планирования <span class="o-text_strong">732 400₽</span><br />
-          Итоговый остаток ДС после планирования <span class="o-text_strong">732 400₽</span>
+          <div class="l-grid">
+            <div class="l-grid__item_6 l-align_center">
+              Итоговый остаток после планирования <span class="o-text_strong">732 400₽</span>
+            </div>
+            <div class="l-grid__item_6 l-align_center">
+              Итоговый остаток ДС после планирования <span class="o-text_strong">732 400₽</span>
+            </div>
+          </div>
         </div>
       </div>
 
