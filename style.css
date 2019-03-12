@@ -10,6 +10,7 @@
   --background-body: #f9f7fb;
   --background-mask: rgba(0,0,0,.6);
   --background-panel: #ffffff;
+  --background-row: #fffae3;
   --background-button_first: #3844d5;
   --background-button_second: #268fec;
   --gradient-first: #7100e5;
@@ -108,6 +109,11 @@ body, html {
   vertical-align: middle;
 }
 
+.o-icon_s {
+  width: 1rem;
+  height: 1rem;
+}
+
 .o-text_small {
   font-size: var(--text-size-s);
 }
@@ -172,6 +178,7 @@ body, html {
   padding: .5rem 1.625rem .5rem 0.8125rem;
   height: 40px;
   display: inline-block;
+  width: 100%;
   vertical-align: middle;
   line-height: 1.47;
   border: 1px solid var(--color-border);
@@ -179,8 +186,13 @@ body, html {
   cursor: pointer;
 }
 
+[class*="l-float_"].o-select {
+  width: auto;
+}
+
 .o-select_inline {
   border: 0;
+  display: inline;
 }
 
 .o-icon_more {
@@ -296,7 +308,7 @@ body, html {
   color: var(--color-base);
 }
 
-.o-link_with-icon .o-icon {
+.o-link_with-icon [class*="o-icon"] {
   margin-right: 0.5rem;
   fill: currentColor;
   transition: fill var(--transition);
@@ -308,8 +320,13 @@ body, html {
   color: var(--color-light);
   font-size: var(--text-size-xs);
   text-transform: uppercase;
+  white-space: nowrap;
   font-weight: 600;
   letter-spacing: 3px;
+}
+
+.o-link_accident:hover {
+  color: var(--color-base);
 }
 
 .marked {
@@ -348,6 +365,10 @@ body, html {
 
 .o-table__group_current {
   background: var(--background-body);
+}
+
+.o-table__row-accident .o-table__td {
+  background: var(--background-row);
 }
 
 tr:hover .o-table__td {
@@ -576,6 +597,24 @@ tr:nth-child(2) .o-table__th_rowspan {
 
 .status_closed .o-status {
   border-color: var(--color-base);
+}
+
+.o-status_saved {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  background: var(--background-button_second);
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.8;
+  border-radius: 20px;
+  padding: 0.625rem 2rem;
+}
+
+.o-status_saved [class*="o-icon"] {
+  fill: currentColor;
+  margin-right: 0.625rem;
 }
 
 /* LAYOUTS */
@@ -873,4 +912,15 @@ a.o-menu__item.active {
 
 .request-sum__label {
   font-weight: 400;
+}
+
+.usr_ava {
+  float: right;
+  margin-left: 1rem;
+}
+
+.usr_ava img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
