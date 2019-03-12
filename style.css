@@ -720,11 +720,12 @@ a.o-menu__item:visited {
 
 .o-menu__item .o-icon {
   margin-right: 1.875rem;
+  fill: currentColor;
+  transition: margin var(--transition);
 }
 
-.o-menu__item .o-icon {
-  margin-right: 1.875rem;
-  transition: margin var(--transition);
+a.o-menu__item.active {
+  color: var(--gradient-first);
 }
 
 .body_aside .o-menu__item .o-icon {
