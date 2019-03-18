@@ -25,7 +25,7 @@
   --text-size-xl: 1.5rem;     /* 24px */
   --text-size-xxl: 1.875rem;  /* 30px */
 
-  --transition: 300ms ease 0s;
+  --transition: 500ms ease-out 0s;
 
 }
 
@@ -164,6 +164,7 @@ body, html {
   border-radius: 20px;
   background: var(--background-body);
   position: relative;
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .o-button_primary {
@@ -175,8 +176,8 @@ body, html {
   background: var(--color-warning);
 }
 
-.o-button_primary:hover::before,
-.o-button_secondary:hover::before {
+.o-button_secondary::before,
+.o-button_primary::before {
   content: "";
   position: absolute;
   left: 0;
@@ -185,6 +186,13 @@ body, html {
   height: 100%;
   border-radius: 20px;
   background: rgba(0,0,0,.2);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.o-button_primary:hover::before,
+.o-button_secondary:hover::before {
+  opacity: 1;
 }
 
 .o-button_cancel {
@@ -202,6 +210,7 @@ body, html {
   border: 1px solid var(--color-border);
   position: relative;
   cursor: pointer;
+  transition: border-color var(--transition);
 }
 
 .o-input {
@@ -262,6 +271,7 @@ body, html {
   color: var(--color-base);
   white-space: nowrap;
   text-align: left;
+  transition: background var(--transition);
 }
 
 .o-dropdown-list__item:hover {
@@ -333,6 +343,14 @@ body, html {
 .o-link {
   text-decoration: underline;
   cursor: pointer;
+  transition: color var(--transition);
+}
+
+.o-link.o-icon,
+.o-link .o-icon,
+.o-link_with-icon.o-icon,
+.o-link_with-icon .o-icon {
+  transition: fill var(--transition);
 }
 
 .o-link.o-icon:hover,
@@ -366,6 +384,7 @@ body, html {
   white-space: nowrap;
   font-weight: 600;
   letter-spacing: 3px;
+  transition: color var(--transition);
 }
 
 .o-link_accident:hover {
@@ -501,6 +520,7 @@ tr:nth-child(2) .o-table__th_rowspan {
   float: left;
   cursor: pointer;
   text-decoration: none;
+  transition: color var(--transition);
 }
 
 .o-filter__item:hover {
@@ -792,6 +812,7 @@ tr:nth-child(2) .o-table__th_rowspan {
   font-size: 1rem;
   color: var(--color-light);
   white-space: nowrap;
+  transition: color var(--transition), background var(--transition);
 }
 
 a.o-menu__item:link,
@@ -803,7 +824,7 @@ a.o-menu__item:visited {
 .o-menu__item .o-icon {
   margin-right: 1.875rem;
   fill: currentColor;
-  transition: margin var(--transition);
+  transition: margin var(--transition), fill var(--transition);
 }
 
 a.o-menu__item.active {
@@ -876,6 +897,7 @@ a.o-menu__item.active {
   line-height: 1.875rem;
   border: 1px solid transparent;
   border-radius: 20px;
+  transition: color var(--transition), border var(--transition);
 }
 
 .o-pagination__item:hover {
@@ -921,6 +943,7 @@ a.o-menu__item.active {
   color: var(--color-light);
   text-decoration: none;
   border-bottom: 2px solid transparent;
+  transition: color var(--transition);
 }
 
 .request-header__tab-item:hover {
