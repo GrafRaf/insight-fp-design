@@ -4,6 +4,7 @@
   --color-base: #000000;
   --color-light: #888888;
   --color-border: #e9e3ef;
+  --color-border-hover: #dcd3e6;
   --color-success: #27ae6d;
   --color-warning: #e5006e;
 
@@ -162,6 +163,7 @@ body, html {
   text-decoration: none !important;
   border-radius: 20px;
   background: var(--background-body);
+  position: relative;
 }
 
 .o-button_primary {
@@ -169,12 +171,28 @@ body, html {
   background: linear-gradient(to right, var(--gradient-first) 0%, var(--gradient-second) 100%);
 }
 
+.o-button_secondary {
+  background: var(--color-warning);
+}
+
+.o-button_primary:hover::before,
+.o-button_secondary:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: rgba(0,0,0,.2);
+}
+
 .o-button_cancel {
   background: transparent none;
   color: var(--color-base);
 }
 
-.o-select {
+.o-select, .o-input {
   padding: .5rem 1.625rem .5rem 0.8125rem;
   height: 40px;
   display: inline-block;
@@ -184,6 +202,31 @@ body, html {
   border: 1px solid var(--color-border);
   position: relative;
   cursor: pointer;
+}
+
+.o-input {
+  padding-right: 0.8125rem
+}
+
+.o-select:hover,
+.o-input:hover {
+  border-color: var(--color-border-hover);
+}
+
+.o-select:focus,
+.o-input:focus {
+  border-color: var(--background-button_second)
+}
+
+.o-valid_accept,
+.o-valid_accept:hover {
+  border-color: var(--color-success)
+}
+
+
+.o-valid_reject,
+.o-valid_reject:hover {
+  border-color: var(--color-warning)
 }
 
 [class*="l-float_"].o-select {
@@ -413,7 +456,7 @@ tr:nth-child(2) .o-table__th_rowspan {
   width: 30px;
   height: 16px;
   border-radius: 8px;
-  background: var(--color-light);
+  background: #bbbbbb;
   transition: background var(--transition);
 }
 
@@ -679,7 +722,7 @@ tr:nth-child(2) .o-table__th_rowspan {
   line-height: 1.334;
 }
 
-.header .o-button_primary {
+.header [class*="o-button"] {
   float: left;
   margin: 3px 0 0 1.875rem;
 }
@@ -878,6 +921,10 @@ a.o-menu__item.active {
   color: var(--color-light);
   text-decoration: none;
   border-bottom: 2px solid transparent;
+}
+
+.request-header__tab-item:hover {
+  color: var(--color-base);
 }
 
 .request-header__tab-item_current {
