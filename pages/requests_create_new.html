@@ -13,14 +13,9 @@
 <body>
 <header class="header clear">
   <div class="header__breadcrumbs l-float_left">
+    <span class="o-link" onclick="history.back(-1)"><svg class="o-icon_history-back"><use
+        xlink:href="#o-icon_arrow-left"></use></svg></span>
     Создание заявки
-  </div>
-  <div class="l-float_right header__user">
-    <img src="../demo/ava.png"/>
-    <div class="l-float_right">
-      <div>Абдулов Юрий</div>
-      <div class="o-text_small o-text_label">Учредитель</div>
-    </div>
   </div>
 </header>
 <section class="section">
@@ -145,8 +140,7 @@
         </div>
       </div>
       <div class="l-grid__item_8">
-        <input type="text" placeholder=" " class="o-input"/>
-        <div class="o-text_label_input">Статья</div>
+        <input type="text" class="o-input" placeholder="Статья"/>
       </div>
     </div>
 
@@ -158,55 +152,55 @@
         Романов Олег
       </div>
     </div>
-    <div class="l-grid_row">
+    <div class="l-grid_row l-position_relative">
       <input type="text" value="MacBook, 1.3GHz Processor, 512GB Storage" class="o-input" placeholder=" "/>
-      <div class="o-text_label_input">Предмет заказа</div>
+      <div class="o-text_small o-text_label">Предмет заказа</div>
     </div>
-    <div class="l-grid_row">
+    <div class="l-grid_row l-position_relative">
       <textarea type="text" class="o-textarea" placeholder=" ">Необходим компьютер для командировок</textarea>
-      <div class="o-text_label_input">Ситуация</div>
+      <div class="o-text_small o-text_label">Ситуация</div>
     </div>
-    <div class="l-grid_row">
+    <div class="l-grid_row l-position_relative">
       <textarea type="text" class="o-textarea" placeholder=" ">Необходим компьютер для командировок</textarea>
-      <div class="o-text_label_input">Данные</div>
+      <div class="o-text_small o-text_label">Данные</div>
     </div>
     <div class="l-grid_row">
       <div class="o-file">
         <svg class="o-icon_file">
-          <use xlink:href="#o-icon_word"></use>
+          <use xlink:href="#o-icon_docs"></use>
         </svg>
         <div class="o-file__name">Презентация</div>
-        <div class="o-text_label o-text_small">3.7 Мб</div>
-        <svg class="o-link o-icon_close">
+        <div class="o-text_small o-text_light">Word, 3.7 Мб</div>
+        <svg class="o-link o-icon_close o-link_with-icon">
           <use xlink:href="#o-icon_close"></use>
         </svg>
       </div>
       <div class="o-file">
         <svg class="o-icon_file">
-          <use xlink:href="#o-icon_pdf"></use>
+          <use xlink:href="#o-icon_docs"></use>
         </svg>
         <div class="o-file__name">Клиенты из базы сайта</div>
-        <div class="o-text_label o-text_small">3.7 Мб</div>
-        <svg class="o-link o-icon_close">
+        <div class="o-text_small o-text_light">PDF, 3.7 Мб</div>
+        <svg class="o-link o-icon_close o-link_with-icon">
           <use xlink:href="#o-icon_close"></use>
         </svg>
       </div>
     </div>
     <div class="l-grid_row">
-      <span class="o-link_with-icon">
-        <svg class="o-icon"><use xlink:href="#o-icon_attach"></use></svg>ЗАГРУЗИТЬ ФАЙЛ
+      <span class="o-link_with-icon o-link_accident">
+        <svg class="o-icon"><use xlink:href="#o-icon_attach"></use></svg>Прикрепить файл
       </span>
     </div>
     <div class="l-grid_row"></div>
     <div class="clear">
       <div class="l-float_left">
         <span class="o-button_primary">
-          Подготовлен
+          Подготовлена
         </span>
-        <span class="o-button_secondary">
-          в черновик
+        <span class="o-link_accident">
+          Сохранить в черновик
         </span>
-        <span class="o-button_secondary">
+        <span class="o-link_accident">
           отменить
         </span>
       </div>

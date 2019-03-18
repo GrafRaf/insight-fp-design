@@ -200,7 +200,7 @@ body, html {
   color: var(--color-base);
 }
 
-.o-select, .o-input {
+.o-select, .o-input, .o-textarea {
   padding: .5rem 1.625rem .5rem 0.8125rem;
   height: 40px;
   display: inline-block;
@@ -211,17 +211,25 @@ body, html {
   position: relative;
   cursor: pointer;
   transition: border-color var(--transition);
+  background-color: transparent;
 }
 
 .o-input {
   padding-right: 0.8125rem
 }
 
+.o-textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.o-textarea:hover,
 .o-select:hover,
 .o-input:hover {
   border-color: var(--color-border-hover);
 }
 
+.o-textarea:focus,
 .o-select:focus,
 .o-input:focus {
   border-color: var(--background-button_second)
@@ -236,6 +244,36 @@ body, html {
 .o-valid_reject,
 .o-valid_reject:hover {
   border-color: var(--color-warning)
+}
+
+.o-file {
+  width: 10.9375rem;
+  height: 3.125rem;
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 2.4375rem;
+  position: relative;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.o-icon_file {
+  width: 20px;
+  height: 26px;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+
+.o-file .o-icon_close {
+  right: 10px;
+  top: 12px;
+  position: absolute;
+}
+
+.o-file__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 [class*="l-float_"].o-select {
@@ -391,6 +429,14 @@ body, html {
 
 .o-title + .o-link_accident {
   margin-left: 1.25rem;
+}
+
+.o-button_primary + .o-link_accident {
+  margin-left: 2rem;
+}
+
+.o-button_primary + .o-link_accident + .o-link_accident {
+  margin-left: 5rem;
 }
 
 .o-link_accident:hover {
@@ -861,6 +907,7 @@ a.o-menu__item.active {
 }
 
 .o-menu__fixed {
+  display: none;
   position: fixed;
   top: 0;
   opacity: 0;
@@ -873,6 +920,7 @@ a.o-menu__item.active {
 }
 
 .o-menu__fixed_visible {
+  display: block;
   z-index: 39;
   margin-left: 0;
   opacity: 1;
@@ -884,6 +932,7 @@ a.o-menu__item.active {
 }
 
 .o-menu__submenu {
+  display: none;
   position: absolute;
   top: -50px;
   left: 100%;
@@ -894,6 +943,7 @@ a.o-menu__item.active {
 }
 
 .o-menu__submenu_visible {
+  display: block;
   top: 0;
   z-index: 42;
   opacity: 1;
@@ -1053,4 +1103,16 @@ a.o-menu__item.active {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+
+.section__form {
+  margin-top: 1rem;
+}
+
+.section__form .l-grid {
+  grid-column-gap: 2rem;
+}
+
+.section__form .l-grid_row {
+  margin-bottom: 1.375rem;
 }
