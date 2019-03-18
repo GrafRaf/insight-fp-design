@@ -363,6 +363,8 @@ body, html {
   cursor: pointer;
   text-decoration: none !important;
   transition: color var(--transition);
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .o-link_with-icon:hover {
@@ -747,8 +749,12 @@ tr:nth-child(2) .o-table__th_rowspan {
   margin: 3px 0 0 1.875rem;
 }
 
-.header .o-link {
+/*.header .o-link {
   margin: .75rem 0 0 1.875rem;
+}*/
+
+.header .o-link_with-icon {
+  margin-top: .75rem;
 }
 
 /* ASIDE */
