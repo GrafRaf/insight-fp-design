@@ -389,6 +389,10 @@ body, html {
   transition: color var(--transition);
 }
 
+.o-title + .o-link_accident {
+  margin-left: 1.25rem;
+}
+
 .o-link_accident:hover {
   color: var(--color-base);
 }
