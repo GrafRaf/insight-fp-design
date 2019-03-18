@@ -33,6 +33,24 @@ $(document).ready(function () {
   });
 
   initSelect();
+
+  $(".o-menu__item").click(function(){
+    $("body").addClass("body_aside");
+    var childMenu = $(this).parent().children(".o-menu__fixed");
+    var subMenu = $(this).parent().children(".o-menu__submenu");
+    if (childMenu.length) {
+      childMenu.addClass("o-menu__fixed_visible")
+    }
+    if (subMenu.length) {
+      subMenu.addClass("o-menu__submenu_visible")
+    }
+  })
+
+  $(".aside-mask").click(function(){
+    $("body").removeClass("body_aside");
+    $(".o-menu__fixed_visible").removeClass("o-menu__fixed_visible");
+    $(".o-menu__submenu_visible").removeClass("o-menu__submenu_visible");
+  })
 });
 
 function initSelect() {
