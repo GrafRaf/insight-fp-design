@@ -16,20 +16,48 @@
     <span class="o-link" onclick="history.back(-1)"><svg class="o-icon_history-back"><use
         xlink:href="#o-icon_arrow-left"></use></svg></span>
     Заявка №4326346 от 16.02.19
-    <a class="o-link header__edit" href="requests_edit.html"><svg class="o-icon_s"><use xlink:href="#o-icon_edit"></use></svg></a>
-    <span class="status_approved"><span class="o-status"></span> <span class="o-text_r l-align_middle">Подготовлена</span></span>
+    <a class="o-link header__edit" href="requests_edit.html">
+      <svg class="o-icon_s">
+        <use xlink:href="#o-icon_more"></use>
+      </svg>
+    </a>
+    <span class="status_preapproved"><span class="o-status"></span> <span class="o-text_r l-align_middle">Рассмотрена на ФП</span></span>
   </div>
 </header>
 <section class="section">
   <div class="section__doc">
     <div class="section__doc__amounts">
-      <div class="request-amount">
-        <div class="request-amount__label">Сумма</div>
-        15 437 977 ₽
+      <div class="l-grid">
+        <div class="l-grid__item_4">
+          <div class="request-amount">
+            <div class="request-amount__label">Одобрено</div>
+            15 437 977 ₽
+            <div class="o-text_r">
+              3 одобрения
+              <span class="o-icon_drop"></span>
+            </div>
+          </div>
+        </div>
+        <div class="l-grid__item_4">
+          <div class="request-amount">
+            <div class="request-amount__label">Выплачено</div>
+            4 437 977.84 ₽
+            <div class="o-text_r">
+              4 выплаты
+              <span class="o-icon_drop"></span>
+            </div>
+          </div>
+        </div>
+        <div class="l-grid__item_4">
+          <div class="request-amount">
+            <div class="request-amount__label">Осталось</div>
+            11 437 977.84 ₽
+            <div class="o-text_r">
+              Крайний срок 20.02.19 18:00
+            </div>
+          </div>
+        </div>
       </div>
-      <a class="o-button_primary" href="#">Утвердить</a>
-      <a class="o-button_primary" href="#">Рассмотреть на ФП</a>
-      <a class="o-button_secondary o-button_margin" href="#">отклонить</a>
     </div>
     <div class="clear section__form">
       <div class="request-summary">
@@ -89,8 +117,30 @@
             <span class="o-text_light o-text_small">Меркулов Андрей</span>
           </div>
         </div>
+        <div class="request-summary__activity l-grid_row">
+          <div class="status_rejected"><span class="o-status"></span></div>
+          <div class="o-text_light">19.02.18 18:19</div>
+          <div>Заявка отклонена</div>
+          <div class="clear request-summary__user">
+            <img src="../demo/ava.png">
+            <span class="o-text_light o-text_small">Меркулов Андрей</span>
+          </div>
+        </div>
+        <div class="request-summary__activity l-grid_row">
+          <div class="status_preapproved"><span class="o-status"></span></div>
+          <div class="o-text_light">19.02.18 18:19</div>
+          <div>Одобрено 50 000 ₽</div>
+          <div class="clear request-summary__user">
+            <img src="../demo/ava.png">
+            <span class="o-text_light o-text_small">Меркулов Андрей</span>
+          </div>
+        </div>
 
-
+        <div class="request-summary__activity">
+          <span class="o-link_with-icon">
+            Ещё 15 <span class="o-icon_drop"></span>
+          </span>
+        </div>
       </div>
       <div class="request-info">
         <div class="o-title l-grid_row">
@@ -117,7 +167,7 @@
           </div>
           <div class="l-grid__item_8">
             <div class="o-text_light">Статья</div>
-            <div class="o-text_increased">Необычный способ развлечь ребенка на футбольном матче </div>
+            <div class="o-text_increased">Необычный способ развлечь ребенка на футбольном матче</div>
           </div>
         </div>
         <div class="l-grid_row">

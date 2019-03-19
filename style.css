@@ -308,9 +308,8 @@ body, html {
 }
 
 .o-icon_more {
-  width: 14px;
-  height: 14px;
-  fill: var(--color-base);
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 .o-dropdown-list {
@@ -364,6 +363,7 @@ body, html {
   top: 50%;
   transform: scaleX(1.75);
   opacity: 0.5;
+  transition: color var(--transition);
 }
 
 .o-icon_drop {
@@ -373,6 +373,10 @@ body, html {
   width: 1rem;
   height: 1rem;
   vertical-align: middle;
+}
+
+.o-link_with-icon:hover .o-icon_drop::after {
+  color: var(--color-base);
 }
 
 .o-select__list {
@@ -1157,6 +1161,10 @@ a.o-menu__item.active {
   width: 15.625rem;
 }
 
+.section__doc__amounts {
+  margin-right: 17.5rem;
+}
+
 .request-info {
   margin-right: 17.5rem;
   margin-top: 2rem;
@@ -1175,6 +1183,10 @@ a.o-menu__item.active {
   float: left;
   margin-top: 10px;
   margin-right: 5px;
+}
+
+.header__edit {
+  text-decoration: none;
 }
 
 .header__edit .o-icon_s {
