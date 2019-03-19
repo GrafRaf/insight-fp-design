@@ -16,35 +16,29 @@
     <span class="o-link" onclick="history.back(-1)"><svg class="o-icon_history-back"><use
         xlink:href="#o-icon_arrow-left"></use></svg></span>
     Заявка №4326346 от 16.02.19
-    <a class="o-link header__edit" href="requests_edit.html"><svg class="o-icon"><use xlink:href="#o-icon_edit"></use></svg></a>
-  </div>
-  <div class="l-float_right header__user">
-    <img src="../demo/ava.png"/>
-    <div class="l-float_right">
-      <div>Абдулов Юрий</div>
-      <div class="o-text_small o-text_label">Учредитель</div>
-    </div>
+    <a class="o-link header__edit" href="requests_edit.html"><svg class="o-icon_s"><use xlink:href="#o-icon_edit"></use></svg></a>
+    <span class="status_approved"><span class="o-status"></span> <span class="o-text_r l-align_middle">Подготовлена</span></span>
   </div>
 </header>
 <section class="section">
   <div class="section__doc">
-    <div class="request-header">
-      <div class="request-sum">
-        <div class="request-sum__label">Сумма</div>
+    <div>
+      <div class="request-amount">
+        <div class="request-amount__label">Сумма</div>
         15 437 977 ₽
       </div>
-      <span class="o-button_primary">Утвердить</span>
-      <span class="o-button_primary">Рассмотреть на ФП</span>
-      <span class="o-button_deny">отклонить</span>
+      <a class="o-button_primary" href="#">Утвердить</a>
+      <a class="o-button_primary" href="#">Рассмотреть на ФП</a>
+      <a class="o-button_secondary o-button_margin" href="#">отклонить</a>
     </div>
-    <div class="clear">
+    <div class="clear section__form">
       <div class="request-summary">
         <div class="o-title l-grid_row">Ответственный</div>
         <div class="clear">
           <div class="header__user">
             <img src="../demo/ava.png">
             <div>Абдулов Юрий</div>
-            <div class="o-text_small o-text_label">Учредитель</div>
+            <div class="o-text_small o-text_light">Учредитель</div>
           </div>
         </div>
         <div class="l-grid_row"></div>
@@ -52,84 +46,105 @@
         <div class="l-grid_row">
           <div class="o-file">
             <svg class="o-icon_file">
-              <use xlink:href="#o-icon_word"></use>
+              <use xlink:href="#o-icon_docs"></use>
             </svg>
             <div class="o-file__name">Презентация</div>
-            <div class="o-text_label o-text_small">3.7 Мб</div>
-            <svg class="o-link o-icon_close">
-              <use xlink:href="#o-icon_close"></use>
-            </svg>
+            <div class="o-text_light">Word, 3.7 Мб</div>
           </div>
         </div>
         <div class="l-grid_row">
           <div class="o-file">
             <svg class="o-icon_file">
-              <use xlink:href="#o-icon_pdf"></use>
+              <use xlink:href="#o-icon_docs"></use>
             </svg>
-            <div class="o-file__name">Клиенты из базы сайта</div>
-            <div class="o-text_label o-text_small">3.7 Мб</div>
-            <svg class="o-link o-icon_close">
-              <use xlink:href="#o-icon_close"></use>
-            </svg>
+            <div class="o-file__name">Презентация</div>
+            <div class="o-text_light">PDF, 4.2 Мб</div>
           </div>
         </div>
+        <div class="l-grid_row">
+          <div class="o-file">
+            <svg class="o-icon l-float_right">
+              <use xlink:href="#o-icon_loading"></use>
+            </svg>
+            <svg class="o-icon_file">
+              <use xlink:href="#o-icon_docs"></use>
+            </svg>
+            <div class="o-file__name">Презентация</div>
+            <div class="o-colored">Загрузка 54%</div>
+          </div>
+        </div>
+
         <span class="o-link_with-icon">
-          <svg class="o-icon"><use xlink:href="#o-icon_attach"></use></svg>ЗАГРУЗИТЬ ФАЙЛ
+          <svg class="o-icon_s"><use xlink:href="#o-icon_attach"></use></svg>
+          <span class="l-align_middle">Прирепить файл</span>
         </span>
         <div class="l-grid_row"></div>
         <div class="o-title l-grid_row">Активность</div>
         <div class="request-summary__activity">
           <div class="status_approved"><span class="o-status"></span></div>
-          <div class="o-text_label">19.02.18 18:19</div>
-          <div class="o-text_increased">Подготовлена заявка</div>
-          <div class="o-text_label">
-            <img src="../demo/ava.png"> <span class="l-align_middle">Меркулов Андрей</span></div>
+          <div class="o-text_light">19.02.18 18:19</div>
+          <div>Подготовлена заявка</div>
+          <div class="clear request-summary__user">
+            <img src="../demo/ava.png">
+            <span class="o-text_light o-text_small">Меркулов Андрей</span>
+          </div>
         </div>
+
 
       </div>
       <div class="request-info">
+        <div class="o-title l-grid_row">
+          Информация о заявке
+        </div>
         <div class="l-grid_row l-grid">
           <div class="l-grid__item_4">
-            <div class="o-text_label">Головная организация</div>
+            <div class="o-text_light">Головная организация</div>
             <div class="o-text_increased">Торговый дом</div>
           </div>
           <div class="l-grid__item_4">
-            <div class="o-text_label">Дочерняя</div>
-            <div class="o-text_increased">Торговый дом</div>
+            <div class="o-text_light">Дочерняя организация</div>
+            <div class="o-text_increased">Торговый дом 2</div>
+          </div>
+          <div class="l-grid__item_4">
+            <div class="o-text_light">Подразделение</div>
+            <div class="o-text_increased">Подразделение 1</div>
           </div>
         </div>
-        <div class="l-grid_row"></div>
         <div class="l-grid_row l-grid">
           <div class="l-grid__item_4">
-            <div class="o-text_label">Головная организация</div>
+            <div class="o-text_light">Фонд</div>
             <div class="o-text_increased">Торговый дом</div>
           </div>
-          <div class="l-grid__item_4">
-            <div class="o-text_label">Дочерняя</div>
-            <div class="o-text_increased">Торговый дом</div>
-          </div>
-          <div class="l-grid__item_4">
-            <div class="o-text_label">Дочерняя</div>
-            <div class="o-text_increased">Торговый дом</div>
+          <div class="l-grid__item_8">
+            <div class="o-text_light">Статья</div>
+            <div class="o-text_increased">Необычный способ развлечь ребенка на футбольном матче </div>
           </div>
         </div>
-        <div class="l-grid_row"></div>
         <div class="l-grid_row">
-          <div class="o-text_label">Предмет заказа</div>
+          <div class="o-text_light">Предмет заказа</div>
           <div class="o-text_increased">MacBook, 1.3GHz Processor, 512GB Storage</div>
         </div>
-        <div class="l-grid_row"></div>
         <div class="l-grid_row">
-          <div class="o-text_label">Ситуция</div>
+          <div class="o-text_light">Ситуация</div>
           <div class="o-text_increased">
             Создание интерфейсов — невероятно сложный процесс. Чтобы сайтом или приложением было легко пользоваться,
             дизайнер должен быть погружён в тему UI и UX, понимать особенности человеческой психологии, работать
             с архитектурой проекта и доводить до совершенства множество небольших деталей
           </div>
         </div>
-        <div class="l-grid_row"></div>
         <div class="l-grid_row">
-          <div class="o-text_label">Данные</div>
+          <div class="o-text_light">Данные</div>
+          <div class="o-text_increased">
+            Создание интерфейсов — невероятно сложный процесс. Чтобы сайтом или приложением было легко пользоваться,
+            дизайнер должен быть погружён в тему UI и UX, понимать особенности человеческой психологии, работать
+            с архитектурой проекта и доводить до совершенства множество небольших деталей<br/>
+            Создание интерфейсов — невероятно сложный процесс. Чтобы сайтом или приложением было легко пользоваться,
+            дизайнер должен быть погружён в тему UI и UX, понимать особенности человеческой психологии, работать
+            с архитектурой проекта и доводить до совершенства множество небольших деталей
+          </div>
+        </div>
+        <div class="l-grid_row">
+          <div class="o-text_light">Решение</div>
           <div class="o-text_increased">
             Создание интерфейсов — невероятно сложный процесс. Чтобы сайтом или приложением было легко пользоваться,
             дизайнер должен быть погружён в тему UI и UX, понимать особенности человеческой психологии, работать
@@ -140,10 +155,7 @@
           </div>
         </div>
       </div>
-
     </div>
-
-
   </div>
 </section>
 <div id="system-panel"></div>
