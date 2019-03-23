@@ -9,7 +9,7 @@
   --color-warning: #e5006e;
 
   --background-body: #f9f7fb;
-  --background-mask: rgba(0,0,0,.6);
+  --background-mask: rgba(0,0,0,.8);
   --background-panel: #ffffff;
   --background-row: #fffae3;
   --background-button_first: #3844d5;
@@ -219,20 +219,27 @@ body, html {
   line-height: 1.47;
   border: 1px solid var(--color-border);
   position: relative;
-  cursor: pointer;
   transition: border-color var(--transition);
   background-color: transparent;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: var(--text-size-r);
 }
 
+.o-select {
+  cursor: pointer;
+}
+
 .o-input {
-  padding-right: 0.8125rem
+  padding-right: 0.8125rem;
 }
 
 .o-textarea {
   height: 80px;
   resize: vertical;
+}
+
+div.o-textarea {
+  height: auto;
 }
 
 .o-textarea:hover,
@@ -413,7 +420,12 @@ body, html {
   top: -8px;
   left: 0.7rem;
   padding: 0 2px;
+  z-index: 1;
   background: var(--background-body);
+}
+
+.o-modal__window .o-text_label {
+  background: var(--background-panel);
 }
 
 .o-text_increased {
@@ -1242,4 +1254,56 @@ a.o-menu__item.active {
   height: 1.875rem;
   margin-right: 0.625rem;
   margin-top: -3px;
+}
+
+/* MODAL WINDOW */
+.o-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-mask);
+  z-index: 99;
+}
+
+.o-modal__window {
+  position: absolute;
+  background: var(--background-panel);
+  max-width: 600px;
+  padding: 0 2.5rem;
+  width: 90%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.o-modal__title {
+  font-size: var(--text-size-xxl);
+  line-height: 1.767;
+  margin: 1.25rem 0 1.5625rem;
+  font-weight: 600;
+}
+
+.o-modal__footer {
+  margin: 2.5rem -2.5rem 0;
+}
+
+.o-modal__footer [class*="o-button"] {
+  float: left;
+  width: 50%;
+  height: 50px;
+  border-radius: 0;
+  padding-top: 1.25rem;
+}
+
+.o-modal__footer [class*="o-button"]::before {
+  border-radius: 0;
+}
+
+.o-modal__close {
+  position: absolute;
+  right: 2.25rem;
+  top: 2.25rem;
 }
