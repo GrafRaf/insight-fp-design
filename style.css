@@ -276,6 +276,10 @@ div.o-textarea {
   height: auto;
 }
 
+div.o-textarea_functions {
+  height: 100%;
+}
+
 .o-textarea:hover,
 .o-select:hover,
 .o-input:hover {
@@ -406,6 +410,10 @@ div.o-textarea {
   color: #fff;
 }
 
+.o-dropdown-list__item_selected .o-link_with-icon {
+  color: #fff !important;
+}
+
 .o-table__td .o-select_inline {
   padding: 0 1.625rem 0 0;
   height: auto;
@@ -511,6 +519,7 @@ div.o-textarea {
   transition: color var(--transition);
   display: inline-block;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 .o-table__td .o-link_with-icon,
@@ -522,6 +531,12 @@ div.o-textarea {
   margin-right: 0.5rem;
   fill: currentColor;
   transition: fill var(--transition);
+}
+
+
+.o-link_with-icon [class*="o-icon"] + .o-icon_drop {
+  margin-right: 0;
+  margin-left: -5px;
 }
 
 .o-link_accident {
@@ -538,6 +553,9 @@ div.o-textarea {
 
 .o-title + .o-link_accident {
   margin-left: 1.25rem;
+  vertical-align: top;
+  margin-top: 16px;
+  display: inline-block;
 }
 
 .o-button_primary + .o-link_accident {
@@ -567,6 +585,14 @@ div.o-textarea {
   width: 4px;
   height: 4px;
   margin-left: 80%;
+}
+
+.l-overflow_x {
+  overflow-x: auto;
+}
+
+.l-overflow_x .o-table {
+  width: auto;
 }
 
 .o-table__th {
@@ -661,9 +687,9 @@ tr:nth-child(2) .o-table__th_rowspan {
   left: 16px;
 }
 
-.o-switcher_title {
-  margin-top: 5px;
+.o-title + .o-switcher {
   display: inline-block;
+  margin-left: 1.5rem;
 }
 
 .o-switcher + .o-switcher {
@@ -884,6 +910,10 @@ tr:nth-child(2) .o-table__th_rowspan {
   grid-column-gap: 0.75rem;
 }
 
+.l-grid_top {
+  align-items: start;
+}
+
 .l-grid_row {
   margin-bottom: 0.625rem;
   min-height: 10px;
@@ -1100,6 +1130,11 @@ a.o-menu__item:hover {
 .o-table_static {
   margin-top: 1.25rem;
   margin-bottom: 1rem;
+}
+
+.o-table_border {
+  border: solid 1px var(--color-border);
+  background-color: var(--background-panel);
 }
 
 .o-pagination {
@@ -1323,7 +1358,12 @@ a.o-menu__item:hover {
   margin: 0;
   top: 50%;
   left: 50%;
+  font-size: var(--text-size-r);
   transform: translate(-50%, -50%);
+}
+
+.o-modal__window_m {
+  max-width: 900px;
 }
 
 .o-modal__title {
