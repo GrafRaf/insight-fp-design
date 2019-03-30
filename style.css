@@ -513,6 +513,7 @@ div.o-textarea {
   vertical-align: middle;
 }
 
+.o-table__td .o-link_with-icon,
 .o-link_with-icon:hover {
   color: var(--color-base);
 }
