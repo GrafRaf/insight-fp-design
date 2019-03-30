@@ -939,7 +939,8 @@ tr:nth-child(2) .o-table__th_rowspan {
   z-index: 39;
 }
 
-.body_aside .aside-mask {
+.aside-mask {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -949,8 +950,12 @@ tr:nth-child(2) .o-table__th_rowspan {
   z-index: 29;
 }
 
-.body_aside .aside {
+.aside:hover {
   width: 250px;
+}
+
+aside:hover + .aside-mask {
+  display: block;
 }
 
 .o-logo {
@@ -971,7 +976,7 @@ tr:nth-child(2) .o-table__th_rowspan {
   transition: opacity var(--transition);
 }
 
-.body_aside .o-slogan {
+.aside:hover .o-slogan {
   opacity: 1;
 }
 
@@ -1005,12 +1010,13 @@ a.o-menu__item.active {
   color: var(--gradient-first);
 }
 
-.body_aside .o-menu__item .o-icon {
+aside:hover .o-menu__item .o-icon {
   margin-right: 0.875rem;
 }
 
-.o-menu__item:hover {
-  background: var(--background-body);
+.o-menu__item:hover,
+a.o-menu__item:hover {
+  color: var(--color-base);
   cursor: pointer;
 }
 
@@ -1028,44 +1034,29 @@ a.o-menu__item.active {
   display: none;
   position: fixed;
   top: 0;
-  opacity: 0;
   background: #fff;
   width: auto;
   max-height: 100%;
-  z-index: -1;
-  left: 85px;
-  margin-left: -220px;
+  left: 244px;
 }
 
-.o-menu__fixed_visible {
+.o-menu__item:hover + .o-menu__fixed,
+.o-menu__fixed:hover {
   display: block;
-  z-index: 39;
-  margin-left: 0;
-  opacity: 1;
-  transition: opacity var(--transition), left var(--transition);
-}
-
-.body_aside .o-menu__fixed {
-  left: 251px;
 }
 
 .o-menu__submenu {
   display: none;
   position: absolute;
-  top: -50px;
+  top: 0;
+  z-index: 42;
   left: 100%;
-  opacity: 0;
-  margin-left: 1px;
-  z-index: -1;
   background: #fff;
 }
 
-.o-menu__submenu_visible {
+.o-menu__item:hover + .o-menu__submenu,
+.o-menu__submenu:hover {
   display: block;
-  top: 0;
-  z-index: 42;
-  opacity: 1;
-  transition: top var(--transition), opacity var(--transition);
 }
 
 .aside__user {

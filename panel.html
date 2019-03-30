@@ -1,8 +1,7 @@
 <div id="system-panel_content"> <!-- Оболочка исключительно для импорта -->
-  <div class="aside-mask"></div>
   <aside class="aside">
     <div class="clear">
-      <img class="o-logo" src="../demo/logo.jpg" onclick="$('body').toggleClass('body_aside')"/>
+      <img class="o-logo" src="../demo/logo.jpg" />
       <img class="o-slogan" src="../demo/slogan.jpg"/>
     </div>
     <div class="aside__menu o-menu">
@@ -37,10 +36,12 @@
           <a class="o-menu__item" href="#">ИЦО</a>
           <a class="o-menu__item" href="#">Настройка рабочего стола</a>
           <div class="l-position_relative">
-            <a class="o-menu__item active" href="#">Виды статистик</a>
-            <svg class="o-submenu-marker">
-              <use xlink:href="#o-icon_next"></use>
-            </svg>
+            <a class="o-menu__item active" href="#">
+              Виды статистик
+              <svg class="o-submenu-marker">
+                <use xlink:href="#o-icon_next"></use>
+              </svg>
+            </a>
             <div class="o-menu__submenu">
               <a class="o-menu__item" href="#">Внесенные статистики</a>
               <a class="o-menu__item" href="#">Состояния статистик компании</a>
@@ -93,6 +94,7 @@
       <div class="o-text_small o-text_light">Учредитель</div>
     </div>
   </aside>
+  <div class="aside-mask"></div>
 
   <svg style="display:none;width:0;height:0;">
     <symbol id="o-icon_menu-main" viewBox="0 0 24 24">

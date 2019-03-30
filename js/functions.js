@@ -34,7 +34,7 @@ $(document).ready(function () {
 
   initSelect();
 
-  $(".o-menu__item").click(function(){
+  /*$(".o-menu__item").click(function(){
     $("body").addClass("body_aside");
     var childMenu = $(this).parent().children(".o-menu__fixed");
     var subMenu = $(this).parent().children(".o-menu__submenu");
@@ -50,7 +50,7 @@ $(document).ready(function () {
     $("body").removeClass("body_aside");
     $(".o-menu__fixed_visible").removeClass("o-menu__fixed_visible");
     $(".o-menu__submenu_visible").removeClass("o-menu__submenu_visible");
-  })
+  })*/
 });
 
 function initSelect() {
