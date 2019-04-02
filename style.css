@@ -955,6 +955,10 @@ tr:nth-child(2) .o-table__th_rowspan {
   grid-column-gap: 0.75rem;
 }
 
+.l-grid_nogap {
+  grid-column-gap: 0;
+}
+
 .l-grid.o-table__th,
 .l-grid.o-table__td {
   grid-column-gap: 0.375rem;
