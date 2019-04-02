@@ -463,6 +463,11 @@ div.o-textarea_functions {
   vertical-align: middle;
 }
 
+.o-icon_drop_closed {
+  transform: rotate(270deg);
+  margin-top: -5px;
+}
+
 .o-link_with-icon:hover .o-icon_drop::after {
   color: var(--color-base);
 }
