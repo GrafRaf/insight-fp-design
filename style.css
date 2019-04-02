@@ -490,6 +490,7 @@ div.o-textarea_functions {
   background: var(--background-body);
 }
 
+.o-container .o-text_label,
 .o-modal__window .o-text_label {
   background: var(--background-panel);
 }
@@ -965,6 +966,14 @@ tr:nth-child(2) .o-table__th_rowspan {
   min-height: 10px;
 }
 
+.o-table_grid_l .l-grid_row {
+  margin-bottom: 1.25rem;
+}
+
+.o-table_grid_l .l-grid {
+  grid-column-gap: 1.25rem;
+}
+
 .l-grid__item_1 {grid-column: span 1}
 .l-grid__item_2 {grid-column: span 2}
 .l-grid__item_3 {grid-column: span 3}
@@ -989,7 +998,8 @@ tr:nth-child(2) .o-table__th_rowspan {
   line-height: 1.334;
 }
 
-.header [class*="o-button"] {
+.header [class*="o-button"],
+.section__header-button {
   float: left;
   margin: 3px 0 0 1.875rem;
 }
