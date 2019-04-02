@@ -142,6 +142,13 @@ body, html {
   margin-right: 1px;
 }
 
+.o-icon_empty-content {
+  display: block;
+  margin: 0 auto 1.875rem;
+  width: 2.5rem;
+  height: 3.125rem;
+}
+
 .o-table__td:first-child .o-icon_revert {
   left: -3.875rem;
 }
@@ -1182,6 +1189,10 @@ a.o-menu__item:hover {
   border: solid 1px var(--color-border);
   background-color: var(--background-panel);
   margin-bottom: 1.75rem;
+}
+
+.o-container__empty {
+  padding: 18rem 0;
 }
 
 .o-table_static {
