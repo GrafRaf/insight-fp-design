@@ -189,6 +189,10 @@ body, html {
   font-weight: 600;
 }
 
+.o-title_no-padding {
+  padding: 0;
+}
+
 [class*="o-button"] {
   font-size: var(--text-size-xs);
   font-weight: 600;
@@ -571,20 +575,19 @@ div.o-textarea_functions {
 }
 
 .marked {
-  position: relative;
   display: inline-block;
 }
 
 .marked::after {
   content: "";
   position: absolute;
-  left: 100%;
+  left: 50%;
   top: -5px;
   background: var(--color-warning);
   border-radius: 50%;
   width: 4px;
   height: 4px;
-  margin-left: 80%;
+  margin-left: 14px;
 }
 
 .l-overflow_x {
@@ -603,9 +606,24 @@ div.o-textarea_functions {
   border-bottom: 2px solid var(--color-border);
 }
 
+.l-grid.o-table__th {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .o-table__td {
   padding: .9375rem .9375rem .875rem;
   border-top: 1px solid var(--color-border);
+}
+
+.l-grid.o-table__td:first-child {
+  border-top: 0;
+}
+
+.l-grid.o-table__td {
+  margin: 0 1.25rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 .o-table__group {
@@ -625,13 +643,13 @@ tr:hover .o-table__td_edit {
   background: var(--background-row);
 }
 
-.o-table__th:first-child,
-.o-table__td:first-child {
+table .o-table__th:first-child,
+table .o-table__td:first-child {
   padding-left: 1.875rem;
 }
 
-.o-table__th:last-child,
-.o-table__td:last-child {
+table .o-table__th:last-child,
+table .o-table__td:last-child {
   padding-right: 1.875rem;
 }
 
@@ -647,6 +665,25 @@ tr:nth-child(2) .o-table__th_rowspan {
 
 .o-table__sum {
   color: var(--color-light);
+}
+
+.list-mark {
+  margin: 0 6px 0 2px;
+  line-height: 1.3;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.list-mark::after,
+.list-mark::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  margin-right: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  background: var(--color-border-hover);
 }
 
 .o-switcher {
@@ -910,6 +947,15 @@ tr:nth-child(2) .o-table__th_rowspan {
   grid-column-gap: 0.75rem;
 }
 
+.l-grid.o-table__th,
+.l-grid.o-table__td {
+  grid-column-gap: 0.375rem;
+}
+
+.o-table__td_child-grid {
+  padding-left: 1.5625rem;
+}
+
 .l-grid_top {
   align-items: start;
 }
@@ -1118,6 +1164,7 @@ a.o-menu__item:hover {
 
 .section__header-filter {
   margin: 0.5rem 1rem 0 2rem;
+  position: relative;
 }
 
 .o-container, .o-table_static {

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insight - Планы</title>
+  <link rel="stylesheet" type="text/css" href="../style.css"/>
+  <link rel="import" href="../panel.html"/>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/functions.js"></script>
+</head>
+<body>
+<header class="header clear">
+  <div class="header__breadcrumbs l-float_left">
+    Отчет
+  </div>
+</header>
+<section class="section">
+  <div class="section__header clear l-position_relative">
+    <h1 class="o-title o-title_no-padding l-float_left">
+      Счета к оплате
+    </h1>
+    <div class="l-float_right section__header-filter">
+      <span class="o-link_with-icon">
+        <span class="marked">
+        <svg class="o-icon marked">
+          <use xlink:href="#o-icon_filter"></use>
+        </svg></span>Фильтры и группировка
+        <span class="o-icon_drop"></span>
+      </span>
+    </div>
+    <div class="l-float_right" style="padding-left:0.625rem;">
+      <a class="o-button_primary" href="#">Сформировать</a>
+    </div>
+    <div class="o-select l-float_right">
+      14.03.18 - 25.08.18
+      <div class="o-text_label">За период</div>
+    </div>
+
+  </div>
+  <div class="o-container">
+    <div class="o-table">
+      <div class="l-grid o-table__th">
+        <div class="l-grid__item_3">
+          счет фонда / организация / счет
+        </div>
+        <div class="l-grid__item_1">
+          Дата счета
+        </div>
+        <div class="l-grid__item_1">
+          описание
+        </div>
+        <div class="l-grid__item_1">
+          дата оплаты
+        </div>
+        <div class="l-grid__item_1 l-align_center">
+          дней просрочки
+        </div>
+        <div class="l-grid__item_1 l-align_right">
+          сумма
+        </div>
+        <div class="l-grid__item_1 l-align_right">
+          оплачено
+        </div>
+        <div class="l-grid__item_1 l-align_right">
+          остаток
+        </div>
+        <div class="l-grid__item_1 l-align_right">
+          выделено
+        </div>
+        <div class="l-grid__item_1 l-align_right">
+          просрочено
+        </div>
+      </div>
+      <div>
+        <div class="l-grid o-table__td">
+          <div class="l-grid__item_7">
+            <span class="o-text_strong">
+              Счет поступивших средств
+              <span class="o-icon_drop"></span>
+            </span>
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            <span class="o-text_strong">12 456 345.55</span>
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            <span class="o-text_strong">12 456 345.55</span>
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            <span class="o-text_strong">34 435 345</span>
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            <span class="o-text_strong">34 435 345</span>
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            <span class="o-text_strong">34 435 345</span>
+          </div>
+        </div>
+        <div class="l-grid o-table__td">
+          <div class="l-grid__item_7">
+            <span class="list-mark"></span>
+            <span class="o-text_strong">
+              Торговый дом
+              <span class="o-icon_drop"></span>
+            </span>
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            <span class="o-text_strong">12 456 345.55</span>
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            <span class="o-text_strong">12 456 345.55</span>
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            <span class="o-text_strong">34 435 345</span>
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            <span class="o-text_strong">34 435 345</span>
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            <span class="o-text_strong">34 435 345</span>
+          </div>
+        </div>
+        <div class="l-grid o-table__td">
+          <div class="l-grid__item_3 o-table__td_child-grid">
+            Заказ №00735 от 20.08.2015 23:00:00
+          </div>
+          <div class="l-grid__item_1">
+            02.05.19
+          </div>
+          <div class="l-grid__item_1 o-text_ellipsis">
+            Книга настольная печатная
+          </div>
+          <div class="l-grid__item_1">
+            12.04.20
+          </div>
+          <div class="l-grid__item_1 l-align_center">
+            107
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+        </div>
+        <div class="l-grid o-table__td">
+          <div class="l-grid__item_3 o-table__td_child-grid">
+            Заказ №00735 от 20.08.2015 23:00:00
+          </div>
+          <div class="l-grid__item_1">
+            02.05.19
+          </div>
+          <div class="l-grid__item_1 o-text_ellipsis">
+            Книга настольная печатная
+          </div>
+          <div class="l-grid__item_1">
+            12.04.20
+          </div>
+          <div class="l-grid__item_1 l-align_center">
+            107
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+        </div>
+        <div class="l-grid o-table__td">
+          <div class="l-grid__item_3 o-table__td_child-grid">
+            Заказ №00735 от 20.08.2015 23:00:00
+          </div>
+          <div class="l-grid__item_1">
+            02.05.19
+          </div>
+          <div class="l-grid__item_1 o-text_ellipsis">
+            Книга настольная печатная
+          </div>
+          <div class="l-grid__item_1">
+            12.04.20
+          </div>
+          <div class="l-grid__item_1 l-align_center">
+            107
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+        </div>
+        <div class="l-grid o-table__td">
+          <div class="l-grid__item_3 o-table__td_child-grid">
+            Заказ №00735 от 20.08.2015 23:00:00
+          </div>
+          <div class="l-grid__item_1">
+            02.05.19
+          </div>
+          <div class="l-grid__item_1 o-text_ellipsis">
+            Книга настольная печатная
+          </div>
+          <div class="l-grid__item_1">
+            12.04.20
+          </div>
+          <div class="l-grid__item_1 l-align_center">
+            107
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+        </div>
+        <div class="l-grid o-table__td">
+          <div class="l-grid__item_3 o-table__td_child-grid">
+            Заказ №00735 от 20.08.2015 23:00:00
+          </div>
+          <div class="l-grid__item_1">
+            02.05.19
+          </div>
+          <div class="l-grid__item_1 o-text_ellipsis">
+            Книга настольная печатная
+          </div>
+          <div class="l-grid__item_1">
+            12.04.20
+          </div>
+          <div class="l-grid__item_1 l-align_center">
+            107
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+        </div>
+        <div class="l-grid o-table__td">
+          <div class="l-grid__item_3 o-table__td_child-grid">
+            Заказ №00735 от 20.08.2015 23:00:00
+          </div>
+          <div class="l-grid__item_1">
+            02.05.19
+          </div>
+          <div class="l-grid__item_1 o-text_ellipsis">
+            Книга настольная печатная
+          </div>
+          <div class="l-grid__item_1">
+            12.04.20
+          </div>
+          <div class="l-grid__item_1 l-align_center">
+            107
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+        </div>
+        <div class="l-grid o-table__td">
+          <div class="l-grid__item_3 o-table__td_child-grid">
+            Заказ №00735 от 20.08.2015 23:00:00
+          </div>
+          <div class="l-grid__item_1">
+            02.05.19
+          </div>
+          <div class="l-grid__item_1 o-text_ellipsis">
+            Книга настольная печатная
+          </div>
+          <div class="l-grid__item_1">
+            12.04.20
+          </div>
+          <div class="l-grid__item_1 l-align_center">
+            107
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+        </div>
+        <div class="l-grid o-table__td o-text_light">
+          <div class="l-grid__item_7">
+            Итого
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            12 456 345.55
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+          <div class="l-grid__item_1 l-align_right">
+            34 435 345
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="system-panel"></div>
+</body>
+</html>
