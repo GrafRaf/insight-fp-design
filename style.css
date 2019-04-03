@@ -825,6 +825,11 @@ tr:nth-child(2) .o-table__th_rowspan {
   vertical-align: middle;
 }
 
+.o-popup-reports__body-scroll {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
 .o-popup-reports .request-sum {
   font-size: var(--text-size-xxl);
   font-weight: 600;
