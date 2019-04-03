@@ -322,6 +322,7 @@ div.o-textarea_functions {
   position: relative;
   margin-right: 12px;
   display: inline-block;
+  border-radius: 4px;
   font-size: var(--text-size-xs);
 }
 
