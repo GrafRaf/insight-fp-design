@@ -34,6 +34,28 @@ $(document).ready(function () {
 
   initSelect();
 
+  $(".aside").mouseenter(function(){
+    $(this).addClass("aside_visible")
+  })
+
+  $(".o-menu__item").click(function(){
+    var childMenu = $(this).next(".o-menu__fixed");
+    var subMenu = $(this).next(".o-menu__submenu");
+    childMenu.fadeIn().animate({
+      "left": "251px",
+      opacity: 1
+    }, 300);
+    subMenu.fadeIn().animate({
+      "top": 0,
+      opacity: 1
+    }, 300);
+  });
+
+  $(".aside-mask").click(function(){
+    $(".aside_visible").removeClass("aside_visible");
+    $(".o-menu__fixed, .o-menu__submenu").removeAttr("style");
+  })
+
   /*$(".o-menu__item").click(function(){
     $("body").addClass("body_aside");
     var childMenu = $(this).parent().children(".o-menu__fixed");

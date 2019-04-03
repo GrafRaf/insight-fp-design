@@ -1067,11 +1067,11 @@ tr:nth-child(2) .o-table__th_rowspan {
   z-index: 29;
 }
 
-.aside:hover {
+.aside_visible {
   width: 250px;
 }
 
-aside:hover + .aside-mask {
+.aside_visible + .aside-mask {
   display: block;
 }
 
@@ -1093,7 +1093,7 @@ aside:hover + .aside-mask {
   transition: opacity var(--transition);
 }
 
-.aside:hover .o-slogan {
+.aside_visible .o-slogan {
   opacity: 1;
 }
 
@@ -1127,7 +1127,7 @@ a.o-menu__item.active {
   color: var(--gradient-first);
 }
 
-aside:hover .o-menu__item .o-icon {
+.aside_visible .o-menu__item .o-icon {
   margin-right: 0.875rem;
 }
 
@@ -1153,27 +1153,20 @@ a.o-menu__item:hover {
   top: 0;
   background: #fff;
   width: auto;
-  max-height: 100%;
-  left: 244px;
-}
-
-.o-menu__item:hover + .o-menu__fixed,
-.o-menu__fixed:hover {
-  display: block;
+  height: 100%;
+  left: 201px;
+  opacity: 0;
 }
 
 .o-menu__submenu {
   display: none;
   position: absolute;
-  top: 0;
+  top: -20px;
+  opacity: 0;
   z-index: 42;
   left: 100%;
+  margin-left: 1px;
   background: #fff;
-}
-
-.o-menu__item:hover + .o-menu__submenu,
-.o-menu__submenu:hover {
-  display: block;
 }
 
 .aside__user {
