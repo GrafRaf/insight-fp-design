@@ -1207,6 +1207,7 @@ a.o-menu__item:hover {
   border: solid 1px var(--color-border);
   background-color: var(--background-panel);
   margin-bottom: 1.75rem;
+  position: relative;
 }
 
 .o-container__empty {
@@ -1479,4 +1480,35 @@ a.o-menu__item:hover {
   position: absolute;
   right: 2.25rem;
   top: 2.25rem;
+}
+
+.o-data-loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255,255,255,.8);
+}
+
+.o-data-loader__spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140px;
+  height: 40px;
+  line-height: 38px;
+  font-size: var(--text-size-r);
+  color: #fff;
+  margin: -20px 0 0 -70px;
+  background: var(--background-button_first);
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.o-data-loader__spinner .o-icon_s {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
