@@ -1226,6 +1226,10 @@ a.o-menu__item:hover {
   line-height: 38px;
 }
 
+.o-icon_disabled {
+  fill: #bbbbbb;
+}
+
 .o-pagination__item {
   display: inline-block;
   vertical-align: middle;
@@ -1240,19 +1244,16 @@ a.o-menu__item:hover {
   transition: color var(--transition), border var(--transition);
 }
 
-.o-pagination__item:hover {
+.o-pagination__item.active {
   border-color: var(--color-border);
   color: var(--color-base);
 }
 
-.o-pagination__item.active:hover,
-.o-pagination__item.active {
-  cursor: default;
+.o-pagination__item:hover {
   color: var(--color-base);
-  border-color: transparent;
 }
 
-.o-pagination .o-select {
+.o-pagination > .l-float_right {
   margin-left: 1rem;
 }
 
