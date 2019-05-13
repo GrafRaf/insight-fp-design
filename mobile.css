@@ -1,0 +1,80 @@
+/* ASIDE MENU  */
+.aside {
+    position: fixed;
+    width: 100%;
+    height: 3.75rem;
+}
+
+.o-slogan, .aside-mask {
+    display: none !important;
+}
+
+.o-logo {
+    float: none;
+    margin: 0.625rem auto 0;
+    display: block;
+    background-position: 50% 50%;
+}
+
+.aside__menu {
+    position: fixed;
+    left: -100%;
+    top: 3.75rem;
+    height: calc(100vh - 9rem);
+    overflow-y: auto;
+    width: 100%;
+    background: #fff;
+    transition: left var(--transition);
+}
+
+.aside__user {
+    position: fixed;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0;
+    background: #fff;
+    transition: left var(--transition);
+}
+
+.aside_mobile-opened .aside__user,
+.aside_mobile-opened .aside__menu {
+    left: 0;
+}
+
+.o-menu__fixed {
+    left: 0 !important;
+    width: 100%;
+    z-index: 1;
+}
+
+.o-icon_hamburger {
+    position: fixed;
+    left: 2rem;
+    top: 1.375rem;
+    display: block;
+    width: 24px;
+    height: 16px;
+}
+
+.header {
+    padding-top: 5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.section {
+    padding: 0 1.25rem 2rem 1.25rem;
+}
+
+.o-container, .o-table_static {
+    margin: 0 -1.25rem;
+}
+
+.o-container {
+    overflow-y: auto;
+}
+
+.o-container > .o-table {
+    table-layout: auto;
+}

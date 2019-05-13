@@ -54,6 +54,10 @@ $(document).ready(function () {
   $(".aside-mask").click(function(){
     $(".aside_visible").removeClass("aside_visible");
     $(".o-menu__fixed, .o-menu__submenu").removeAttr("style");
+  });
+
+  $('.o-icon_hamburger').click(function(){
+    $('.aside').toggleClass('aside_mobile-opened')
   })
 
   /*$(".o-menu__item").click(function(){

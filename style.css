@@ -1089,7 +1089,6 @@ tr:nth-child(2) .o-table__th_rowspan {
 }
 
 .o-logo {
-  width: 194px;
   height: 41px;
   float: left;
   margin: 1.875rem 0 0 1.625rem;
@@ -1523,4 +1522,8 @@ a.o-menu__item:hover {
   position: absolute;
   left: 10px;
   top: 10px;
+}
+
+.o-icon_hamburger {
+  display: none;
 }
